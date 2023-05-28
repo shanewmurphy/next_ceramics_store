@@ -33,7 +33,7 @@ const BestSellers_Data = [
   },
   {
     id: "04",
-    image: "/imgs/BestSellers_imgs/Big_Plates_Black_4 Piece_Set.jpg",
+    image: "/imgs/BestSellers_imgs/Big_Plates_Black_4_Piece_Set.jpg",
     name: "Dinnerware Set",
     configuration: "12 Piece Set",
     price: "€199",
