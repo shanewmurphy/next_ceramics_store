@@ -15,6 +15,9 @@ module.exports = {
         footer_bkg: "#828b82",
         bg_button: "#f4f1eb",
       },
+      screens: {
+        sm: "358px",
+      },
     },
   },
   plugins: [],

@@ -1,6 +1,6 @@
 export default function NavDesktop() {
   return (
-    <div className="absolute z-10 inset-x-10">
+    <div className="absolute z-10 inset-x-10 lg:block md:block sm:hidden">
       <div className="flex justify-between pt-4">
         <div>
           <nav>

@@ -14,10 +14,10 @@ export default function SwiperBtns() {
         </div>
         <div className="absolute right-0 top-0 z-20">
           <button onClick={() => swiper.slidePrev()}>
-            <ArrowLeftIcon className="h-8 w-8 text-blue-500" />
+            <ArrowLeftIcon className="h-8 w-8 text-neutral-600 hover:text-neutral-500" />
           </button>
           <button onClick={() => swiper.slideNext()}>
-            <ArrowRightIcon className="h-8 w-8 text-blue-500" />
+            <ArrowRightIcon className="h-8 w-8 text-neutral-600 hover:text-neutral-500" />
           </button>
         </div>
       </div>

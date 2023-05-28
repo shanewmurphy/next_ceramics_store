@@ -4,6 +4,7 @@ import ShippingNote from "../components/Shipping-Note";
 import Hero from "../components/Hero";
 import NavDesktop from "../components/Nav-desktop";
 import BestSellers from "../components/Best-Sellers";
+import BestSellersMobile from "../components/Best-Sellers-Mobile";
 export default function Home() {
   return (
     <div>
@@ -18,6 +19,7 @@ export default function Home() {
       </div>
       <div>
         <BestSellers />
+        <BestSellersMobile />
       </div>
     </div>
   );
