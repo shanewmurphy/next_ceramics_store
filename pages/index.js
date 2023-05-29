@@ -6,6 +6,10 @@ import NavDesktop from "../components/Nav/Nav-desktop";
 import BestSellers from "../components/Carousels/Best-Sellers";
 import BestSellersMobile from "../components/Carousels/Best-Sellers-Mobile";
 import Crafted from "../components/HomePage/Crafted";
+import ColloectionSec from "../components/HomePage/Collection-Sec";
+import Sustainability from "../components/HomePage/Sustain";
+import Blog from "../components/Blog/Blog";
+import BlogCarousel from "../components/Blog/Blog-carousel";
 export default function Home() {
   return (
     <div>
@@ -29,9 +33,19 @@ export default function Home() {
         <h2 className="text-center font-bold text-text lg:text-5xl md:text-4xl sm:text-3xl antialiased">
           Bridging the gap between <i className="font-medium">makers</i> and
           users by sharing the
-          <i className="font-medium"> stories</i> and <i>traditions</i> behind
-          the products we use.
+          <i className="font-medium"> stories</i> and
+          <i className="font-medium"> traditions</i> behind the products we use.
         </h2>
+      </div>
+      <div>
+        <ColloectionSec />
+      </div>
+      <div>
+        <Sustainability />
+      </div>
+      <div>
+        <Blog />
+        <BlogCarousel />
       </div>
     </div>
   );

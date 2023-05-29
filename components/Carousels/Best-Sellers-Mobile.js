@@ -58,7 +58,6 @@ export default function BestSellersMobile() {
         <Swiper
           slidesPerView={"auto"}
           spaceBetween={20}
-          //   centeredSlides={true}
           pagination={{
             clickable: true,
           }}

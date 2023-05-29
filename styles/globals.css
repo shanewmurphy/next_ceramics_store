@@ -20,6 +20,9 @@ body {
   width: 100vw;
   object-fit: fill;
 }
+.collection_imgs {
+  width: 100vw;
+}
 .panel {
   width: 45vw;
   height: 300px;
@@ -80,6 +83,21 @@ body {
 }
 .Link_container:hover button {
   opacity: 1;
+}
+
+.Link_collection button {
+  position: absolute;
+  width: 250px;
+  height: 54px;
+  top: 85%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  opacity: 0;
+  z-index: 66666;
+  background-color: #c98769;
+  color: white;
+  border-radius: 4px;
 }
 .dot_gray {
   height: 25px;
