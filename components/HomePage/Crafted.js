@@ -15,7 +15,7 @@ export default function Crafted() {
           />
         </div>
         <div className="basis-2/5 lg:pl-20 md:pl-8 md:pt-3">
-          <h1 className="lg:text-4xl md:text-4xl sm:text-2xl text-text mt-2 mb-1 font-semibold lg:text-left md:text-center sm:text-center antialiased">
+          <h1 className="lg:text-4xl md:text-4xl sm:text-3xl text-text mt-2 mb-1 font-semibold lg:text-left md:text-center sm:text-center antialiased">
             Crafted <i className="">by</i> tradition
           </h1>
           <p className="text-text-base text-text font-medium lg:text-left md:text-left sm:text-center antialiased">
@@ -24,7 +24,7 @@ export default function Crafted() {
             respect the history and culture behind the process in creating the
             quality to last a lifetime.
           </p>
-          <p className="mt-3">
+          <p className="mt-3 lg:text-left md:text-center sm:text-center">
             <Link href="#">
               <button>
                 <ul className="inline-flex">

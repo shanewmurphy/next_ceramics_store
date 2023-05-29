@@ -26,7 +26,7 @@ export default function Home() {
         <Crafted />
       </div>
       <div className="lg:w-2/3 md:w-10/12 sm:w-11/12 mx-auto mb-40">
-        <h2 className="text-center font-bold text-text lg:text-5xl md:text-4xl sm:text-2xl antialiased">
+        <h2 className="text-center font-bold text-text lg:text-5xl md:text-4xl sm:text-3xl antialiased">
           Bridging the gap between <i className="font-medium">makers</i> and
           users by sharing the
           <i className="font-medium"> stories</i> and <i>traditions</i> behind
