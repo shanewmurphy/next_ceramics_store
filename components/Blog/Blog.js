@@ -40,7 +40,7 @@ export default function Blog() {
         <div className="flex flex-row gap-6">
           {Blog_Data.map((Blogs) => {
             return (
-              <div className="basis-4/12">
+              <div className="basis-4/12" key={Blogs.id}>
                 <div>
                   <Image
                     className="w-screen object-fill"
