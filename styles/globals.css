@@ -16,6 +16,10 @@ body {
   width: 100vw;
   object-fit: fill;
 }
+.crafted_hero_img {
+  width: 100vw;
+  object-fit: fill;
+}
 .panel {
   width: 45vw;
   height: 300px;

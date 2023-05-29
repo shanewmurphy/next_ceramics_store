@@ -1,10 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Scrollbar, A11y, Pagination } from "swiper";
+import { Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+
+import SwiperBtns from "./Swiper-Btns";
 
 const BestSellers_Data = [
   {
@@ -50,19 +52,21 @@ const BestSellers_Data = [
     price: "€78",
   },
 ];
-export default function BestSellersMobile() {
+
+export default function BestSellers() {
   return (
-    <div className="w-11/12 mx-auto lg:hidden md:hidden sm:block mt-16 mb-40">
-      <div className="">
+    <div className="w-11/12 mx-auto mt-20 mb-40 lg:block md:block sm:hidden">
+      <div className="mt-8">
         <Swiper
-          slidesPerView={"auto"}
-          spaceBetween={20}
-          //   centeredSlides={true}
-          pagination={{
-            clickable: true,
-          }}
-          className="mySwiper"
+          modules={[Scrollbar, A11y]}
+          spaceBetween={50}
+          slidesPerView={3}
+          loop={true}
+          pagination={{ clickable: true }}
         >
+          <div>
+            <SwiperBtns />
+          </div>
           {BestSellers_Data.map((BestSellers) => {
             return (
               <SwiperSlide className="mt-16" key={BestSellers.id}>
