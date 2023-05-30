@@ -131,7 +131,8 @@ body {
   width: 80% !important;
 }
 .swiper-slide {
-  width: 80%;
+  width: 100%;
+  background-color: #e6dcd5;
 }
 
 @media screen and (max-width: 900px) {

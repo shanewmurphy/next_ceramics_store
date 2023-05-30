@@ -11,15 +11,15 @@ const Blog_Data = [
   {
     id: "01",
     Title: "Clay and Creativity",
-    Image: "/imgs/Blog_imgs/Blog_Mob_01-min.jpg",
+    Image: "/imgs/Blog_imgs/Blog_Mob_01B-min.jpg",
     alt: "Blog Clay and Creativity",
-    Date: "23 Feb, 2023",
+    Date: "23 Jan, 2023",
     URL: "",
   },
   {
     id: "02",
     Title: "Ceramic Techniques Uncovered",
-    Image: "/imgs/Blog_imgs/Blog_Mob_02-min.jpg",
+    Image: "/imgs/Blog_imgs/Blog_Mob_02A-min.jpg",
     alt: "Ceramic Techniques Uncovered",
     Date: "12 Mar, 2023",
     URL: "",
@@ -27,7 +27,7 @@ const Blog_Data = [
   {
     id: "03",
     Title: "Designing with Clay",
-    Image: "/imgs/Blog_imgs/Blog_Mob_03-min.jpg",
+    Image: "/imgs/Blog_imgs/Blog_Mob_03A-min.jpg",
     alt: "Designing with Clay",
     Date: "12 May, 2023",
     URL: "",
@@ -40,7 +40,7 @@ export default function BlogCarousel() {
       <div className="w-11/12 mx-auto lg:hidden md:hidden sm:block mb-40">
         <div>
           <Swiper
-            spaceBetween={10}
+            spaceBetween={20}
             slidesPerView={"auto"}
             pagination={{
               clickable: true,
@@ -55,14 +55,15 @@ export default function BlogCarousel() {
                 <SwiperSlide className="mt-16" key={Blogs.id}>
                   <div>
                     <Image
+                      className="w-screen object-fill"
                       src={Blogs.Image}
-                      width={249}
-                      height={260}
+                      width={300}
+                      height={380}
                       alt={Blogs.alt}
                     />
                   </div>
                   <div>
-                    <h3 className="mt-2 text-sm font-bold text-text">
+                    <h3 className="mt-2 text-base font-bold text-text">
                       {Blogs.Title}
                     </h3>
                     <h4 className="mt-1 text-xs font-medium text-text">
