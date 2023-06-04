@@ -117,6 +117,20 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                       </ul>
                     </div>
                   </div>
+                  <div>
+                    <div className="flex flex-row justify-between lg:hidden md:hidden sm:flex mx-auto mt-6 mb-6 gap-2">
+                      <di>
+                        <button className="px-9 py-3 text-button border-2 border-button">
+                          Add to Cart
+                        </button>
+                      </di>
+                      <div>
+                        <button className="px-9 py-3 border-2 text-white border-button bg-button">
+                          Checkout
+                        </button>
+                      </div>
+                    </div>
+                  </div>
                   <p className="text-text font-medium text-sm lg:mt-4 md:mt-6 sm:mt-4 antialiased">
                     {Noir.descriptionShort}
                   </p>
@@ -147,13 +161,17 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                       {Noir.Shipping}
                     </h4>
                   </div>
-                  <div className="flex lg:row md:row sm:col mt-6">
+                  <div className="flex w-660 mx-auto lg:text-left sm:text-center md:text-center lg:row md:row sm:col mt-6 lg:block md:block sm:hidden">
                     <ul className="lg:inline-flex md:inline-flex mt-4">
                       <li>
-                        <button className="lg:px-20">Add to Cart</button>
+                        <button className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-button border-2 border-button">
+                          Add to Cart
+                        </button>
                       </li>
                       <li className="ml-6">
-                        <button className="lg:px-20">Checkout</button>
+                        <button className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-white border-2 border-button bg-button">
+                          Checkout
+                        </button>
                       </li>
                     </ul>
                   </div>
