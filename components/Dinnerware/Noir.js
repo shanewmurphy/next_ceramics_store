@@ -86,7 +86,10 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
             {Product_Data_Noir.map((Noir) => {
               return (
                 <div key={Noir.id}>
-                  <h2 className="text-text font-semibold lg:text-left md:text-center sm:text-center lg:text-3xl md:text-4xl sm:text-2xl lg:mt-0 md:mt-16 sm:mt-8 antialiased">
+                  <h2
+                    className="text-text font-semibold lg:text-left md:text-center sm:text-center lg:text-3xl md:text-4xl sm:text-2xl lg:mt-0 md:mt-16 sm:mt-8 antialiased"
+                    key={Noir.id}
+                  >
                     {Noir.ProductTitle}
                     <span className="text-text lg:text-base md:text-lg sm:text-sm font-medium pl-2">
                       ({Noir.Set})
