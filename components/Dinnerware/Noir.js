@@ -49,9 +49,9 @@ const Product_Data_Noir = [
 const Noir = ({ loadIvory, loadRose, loadOlive }) => {
   return (
     <div>
-      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto mt-20 mb-40 gap-12">
-        <div className="lg:w-6/12 md:h-96 sm:h-80">
-          <div className="lg:w-560 mx-auto mb-6">
+      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto mt-20 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
+        <div className="lg:w-6/12">
+          <div className="lg:w-560 mx-auto lg:mb-6 md:mb-0">
             <div>
               <Swiper
                 spaceBetween={50}
@@ -81,12 +81,12 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
             </div>
           </div>
         </div>
-        <div className="lg:w-6/12 lg:mt-0 md:mt-80 sm:mt-12">
+        <div className="lg:w-6/12">
           <div>
             {Product_Data_Noir.map((Noir) => {
               return (
                 <div key={Noir.id}>
-                  <h2 className="text-text font-semibold lg:text-left md:text-center sm:text-center lg:text-3xl md:text-4xl sm:text-2xl lg:mt-0 md:mt-16 sm:mt-8 antialiased">
+                  <h2 className="text-text font-semibold lg:text-left md:text-center sm:text-center lg:text-3xl md:text-4xl sm:text-2xl antialiased">
                     {Noir.ProductTitle}
                     <span className="text-text lg:text-base md:text-lg sm:text-sm font-medium pl-2">
                       ({Noir.Set})
