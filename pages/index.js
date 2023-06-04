@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import ShippingNote from "../components/Shipping-Note";
 import Hero from "../components/Nav/Hero";
 import NavDesktop from "../components/Nav/Nav-desktop";
@@ -25,6 +26,9 @@ export default function Home() {
       <div>
         <BestSellers />
         <BestSellersMobile />
+      </div>
+      <div className="w-10/12 mx-auto">
+        <Link href="/Dinnerware-Sets/Dinnerware-Collection">A</Link>
       </div>
       <div>
         <Crafted />
