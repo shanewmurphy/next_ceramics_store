@@ -33,7 +33,7 @@ export default function Blog() {
     <div className="lg:block md:block sm:hidden">
       <div className="w-11/12 mx-auto">
         <h3 className="text-text font-bold lg:text-3xl md:text-3xl">
-          Latest New
+          Latest News
         </h3>
       </div>
       <div className="w-11/12 mx-auto mt-4 mb-40">

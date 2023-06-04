@@ -12,7 +12,7 @@ export default function ColloectionSec() {
           alt="Collection"
         />
         <div className="absolute z-10 w-96 left-1/2 transform -translate-x-1/2 -translate-y-1/2 top-3/4 text-center">
-          <h6 className="text-white lg:text-5xl md:text-2xl sm:text-2xl font-semibold mb-2 antialiased">
+          <h6 className="text-white lg:text-5xl md:text-2xl sm:text-3xl font-semibold mb-2 antialiased">
             Irish Ceramics
           </h6>
           <Link href="#">
@@ -32,7 +32,7 @@ export default function ColloectionSec() {
           alt="pottery classes"
         />
         <div className="absolute z-10 left-1/2 w-96 transform -translate-x-1/2 -translate-y-1/2 top-3/4 text-center">
-          <h6 className="text-white lg:text-5xl md:text-2xl sm:text-2xl font-semibold mb-2 antialiased">
+          <h6 className="text-white lg:text-5xl md:text-2xl sm:text-3xl font-semibold mb-2 antialiased">
             Pottery Classes
           </h6>
           <Link href="#">

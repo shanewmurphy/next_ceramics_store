@@ -4,7 +4,6 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Scrollbar, A11y } from "swiper";
 import "swiper/css";
 import "swiper/css/pagination";
-import "swiper/css/scrollbar";
 
 import SwiperBtns from "./Swiper-Btns";
 
@@ -102,7 +101,7 @@ export default function BestSellers() {
                   <div className="text-center">
                     <ul className="inline-flex mt-4">
                       <li className="pr-2">
-                        <span className="dot_gray"></span>
+                        <span className="dot_black"></span>
                       </li>
                       <li className="pr-2">
                         <span className="dot_olive"></span>

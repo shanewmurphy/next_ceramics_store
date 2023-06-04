@@ -14,10 +14,14 @@ module.exports = {
         button: "#c98769",
         footer_bkg: "#828b82",
         bg_button: "#f4f1eb",
-        text: "#484B5A"
+        text: "#484B5A",
       },
       screens: {
         sm: "358px",
+      },
+      width: {
+        560: "35rem",
+        660: "42rem",
       },
     },
   },

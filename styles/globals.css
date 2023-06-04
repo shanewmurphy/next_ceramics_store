@@ -99,10 +99,10 @@ body {
   color: white;
   border-radius: 4px;
 }
-.dot_gray {
+.dot_black {
   height: 25px;
   width: 25px;
-  background-color: #bbb;
+  background-color: #5e5d5b;
   border-radius: 50%;
   display: inline-block;
 }

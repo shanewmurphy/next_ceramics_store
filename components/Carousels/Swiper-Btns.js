@@ -2,6 +2,7 @@ import { useSwiper } from "swiper/react";
 
 import { ArrowLeftIcon } from "@heroicons/react/24/outline";
 import { ArrowRightIcon } from "@heroicons/react/24/outline";
+
 export default function SwiperBtns() {
   const swiper = useSwiper();
   return (
