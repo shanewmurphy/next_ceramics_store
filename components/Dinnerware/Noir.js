@@ -114,6 +114,16 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                             <span className="dot_white"></span>
                           </button>
                         </li>
+                        <li className="pl-6">
+                          <button onClick={loadOlive}>
+                            <span className="dot_olive"></span>
+                          </button>
+                        </li>
+                        <li className="pl-6">
+                          <button onClick={loadRose}>
+                            <span className="dot_maroon"></span>
+                          </button>
+                        </li>
                       </ul>
                     </div>
                   </div>
@@ -151,6 +161,16 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                         <li className="pl-6">
                           <button onClick={loadIvory}>
                             <span className="dot_white"></span>
+                          </button>
+                        </li>
+                        <li className="pl-6">
+                          <button onClick={loadOlive}>
+                            <span className="dot_olive"></span>
+                          </button>
+                        </li>
+                        <li className="pl-6">
+                          <button onClick={loadRose}>
+                            <span className="dot_maroon"></span>
                           </button>
                         </li>
                       </ul>
