@@ -6,7 +6,7 @@ export default function BtnCollection() {
   const swiper = useSwiper();
   return (
     <div>
-      <div className="lg:w-560 mx-auto lg:mt-6 md:mt-10 sm:mt-6">
+      <div className="lg:w-560 mx-auto lg:mt-6 md:mt-10 sm:mt-4">
         <div className="flex justify-between w-20 mx-auto">
           <div>
             <button onClick={() => swiper.slidePrev()}>
