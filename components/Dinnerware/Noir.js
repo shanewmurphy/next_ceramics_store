@@ -9,7 +9,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import BtnCollection from "./Btns-Scrollbar";
-
+import FAQDinnerware from "./FAQ";
 const NiorImages_Data = [
   {
     id: "01",
@@ -32,6 +32,7 @@ const NiorImages_Data = [
     url: "/imgs/Dinnerware_Sets_imgs/Nior_05.jpg",
   },
 ];
+
 const Product_Data_Noir = [
   {
     id: "01",
@@ -46,6 +47,7 @@ const Product_Data_Noir = [
     Shipping: "€15 SHIPPING. DELIVERY IN 2-5 BUSINESS DAYS",
   },
 ];
+
 const Noir = ({ loadIvory, loadRose, loadOlive }) => {
   return (
     <div>
@@ -181,7 +183,7 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                       {Noir.Shipping}
                     </h4>
                   </div>
-                  <div className="flex w-660 mx-auto lg:text-left sm:text-center md:text-center lg:row md:row sm:col mt-6 lg:block md:block sm:hidden">
+                  <div className="flex mx-auto lg:text-left sm:text-center md:text-center lg:row md:row sm:col mt-6 lg:block md:block sm:hidden">
                     <ul className="lg:inline-flex md:inline-flex mt-4">
                       <li>
                         <button className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-button border-2 border-button">
@@ -194,6 +196,9 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                         </button>
                       </li>
                     </ul>
+                  </div>
+                  <div>
+                    <FAQDinnerware />
                   </div>
                 </div>
               );

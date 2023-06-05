@@ -8,6 +8,7 @@ import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
 import BtnCollection from "./Btns-Scrollbar";
+import FAQDinnerware from "./FAQ";
 
 const OliveImages_Data = [
   {
@@ -172,7 +173,7 @@ const Olive = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                       {Olive.Shipping}
                     </h4>
                   </div>
-                  <div className="flex w-660 mx-auto lg:text-left sm:text-center md:text-center lg:row md:row sm:col mt-6 lg:block md:block sm:hidden">
+                  <div className="flex  mx-auto lg:text-left sm:text-center md:text-center lg:row md:row sm:col mt-6 lg:block md:block sm:hidden">
                     <ul className="lg:inline-flex md:inline-flex mt-4">
                       <li>
                         <button className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-button border-2 border-button">
@@ -185,6 +186,9 @@ const Olive = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                         </button>
                       </li>
                     </ul>
+                  </div>
+                  <div>
+                    <FAQDinnerware />
                   </div>
                 </div>
               );
