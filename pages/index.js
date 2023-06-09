@@ -3,7 +3,7 @@ import Image from "next/image";
 import Link from "next/link";
 import ShippingNote from "../components/Shipping-Note";
 import Hero from "../components/Nav/Hero";
-import NavDesktop from "../components/Nav/Nav-desktop";
+import NavHomepage from "../components/Nav/Nav-homepage";
 import BestSellers from "../components/Carousels/Best-Sellers";
 import BestSellersMobile from "../components/Carousels/Best-Sellers-Mobile";
 import Crafted from "../components/HomePage/Crafted";
@@ -20,7 +20,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <div>
-        <NavDesktop />
+        <NavHomepage />
         <Hero />
       </div>
       <div>
@@ -28,7 +28,7 @@ export default function Home() {
         <BestSellersMobile />
       </div>
       <div className="w-10/12 mx-auto">
-        <Link href="/Dinnerware-Sets/Dinnerware-Collection">A</Link>
+        <Link href="/Dinnerware-Collection">A</Link>
       </div>
       <div>
         <Crafted />

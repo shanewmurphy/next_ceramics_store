@@ -29,14 +29,6 @@ export default function FAQDinnerware() {
                       <li>Artisan crafted in a family-owned factory</li>
                       <li>Locally sourced & recycled clay</li>
                     </ul>
-                    <h6 className="mt-4">Cutlery:</h6>
-                    <ul className="list-disc list-outside pl-6">
-                      <li>Made from 18/10 premium European stainless steel</li>
-                      <li>Semi-mate brushed finish</li>
-                      <li>Extremely rust-proof and anti-corrosive</li>
-                      <li>100% Dishwasher safe</li>
-                      <li>Hand finished by artisans</li>
-                    </ul>
                   </Disclosure.Panel>
                 </>
               )}

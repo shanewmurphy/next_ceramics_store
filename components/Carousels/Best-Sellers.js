@@ -100,16 +100,16 @@ export default function BestSellers() {
                 <div>
                   <div className="text-center">
                     <ul className="inline-flex mt-4">
-                      <li className="pr-2">
+                      <li className="pr-4">
                         <span className="dot_black"></span>
                       </li>
-                      <li className="pr-2">
+                      <li className="pr-4">
                         <span className="dot_olive"></span>
                       </li>
-                      <li className="pr-2">
+                      <li className="pr-4">
                         <span className="dot_white"></span>
                       </li>
-                      <li className="pr-2">
+                      <li className="pr-4">
                         <span className="dot_maroon"></span>
                       </li>
                     </ul>
