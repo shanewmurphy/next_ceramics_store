@@ -133,12 +133,31 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                   {/* Checkout button mobile */}
                   <div className="flex flex-row justify-center lg:hidden md:hidden sm:flex mx-auto mt-6 mb-6 gap-2">
                     <div>
-                      <button className="w-36 py-2 px-6 text-button border-2 border-button">
+                      <button
+                        className="w-36 py-2 px-6 text-button border-2 border-button"
+                        onClick={() => {
+                          addToCart({
+                            id,
+                          });
+                        }}
+                      >
                         Add to Cart
                       </button>
                     </div>
                     <div>
-                      <button className="w-40 py-2 px-6 border-2 text-white border-button bg-button">
+                      <button
+                        className="w-40 py-2 px-6 border-2 text-white border-button bg-button"
+                        onClick={() => {
+                          initiateCheckout({
+                            lineItems: [
+                              {
+                                price: id,
+                                quantity: 1,
+                              },
+                            ],
+                          });
+                        }}
+                      >
                         Checkout
                       </button>
                     </div>
