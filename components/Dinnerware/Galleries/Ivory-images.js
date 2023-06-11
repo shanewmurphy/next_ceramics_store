@@ -34,8 +34,6 @@ export default function IvoryImages() {
         slidesPerView={1}
         modules={[Scrollbar, A11y]}
         pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {IvoryImages_Data.map((image) => {
           return (
@@ -46,6 +44,7 @@ export default function IvoryImages() {
                 width={2000}
                 height={2000}
                 alt="Dinnerwear Set Nior"
+                priority
               />
             </SwiperSlide>
           );

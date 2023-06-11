@@ -30,8 +30,6 @@ export default function OliveImages() {
         slidesPerView={1}
         modules={[Scrollbar, A11y]}
         pagination={{ clickable: true }}
-        onSlideChange={() => console.log("slide change")}
-        onSwiper={(swiper) => console.log(swiper)}
       >
         {OliveImages_Data.map((image) => {
           return (
@@ -42,6 +40,7 @@ export default function OliveImages() {
                 width={2000}
                 height={2000}
                 alt="Dinnerwear Set Nior"
+                priority
               />
             </SwiperSlide>
           );

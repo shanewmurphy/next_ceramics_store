@@ -4,6 +4,7 @@ import NiorImages from "./Galleries/Nior-images";
 import FAQDinnerware from "./FAQ";
 
 import products from "./products.json";
+// import products from "@/Data/products.json";
 
 // Stripe
 import { initiateCheckout } from "@/lib/payments";
@@ -62,12 +63,23 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
     });
   }
 
+  function checkout() {
+    initiateCheckout({
+      lineItems: cartItems.map((item) => {
+        return {
+          price: item.id,
+          quantity: item.quantity,
+        };
+      }),
+    });
+  }
+
   return (
     <div>
       <div>Items: {totalItems}</div>
       <div>Total Cost: {subtotal}</div>
       <div>
-        <button>Checkout</button>
+        <button onClick={checkout}>Checkout</button>
       </div>
       <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto mt-20 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
         <div className="lg:w-6/12">
@@ -134,7 +146,7 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                   <div className="flex flex-row justify-center lg:hidden md:hidden sm:flex mx-auto mt-6 mb-6 gap-2">
                     <div>
                       <button
-                        className="w-36 py-2 px-6 text-button border-2 border-button"
+                        className="w-56 py-4 px-6  text-white bg-button"
                         onClick={() => {
                           addToCart({
                             id,
@@ -145,7 +157,7 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                       </button>
                     </div>
                     <div>
-                      <button
+                      {/* <button
                         className="w-40 py-2 px-6 border-2 text-white border-button bg-button"
                         onClick={() => {
                           initiateCheckout({
@@ -159,7 +171,7 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                         }}
                       >
                         Checkout
-                      </button>
+                      </button> */}
                     </div>
                   </div>
                 </div>
@@ -214,7 +226,7 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                 <ul className="lg:inline-flex md:inline-flex mt-4">
                   <li>
                     <button
-                      className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-button border-2 border-button"
+                      className="lg:px-24 lg:py-4 md:px-20 md:py-4 text-center text-white bg-button"
                       onClick={() => {
                         addToCart({
                           id,
@@ -225,7 +237,7 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                     </button>
                   </li>
                   <li className="ml-6">
-                    <button
+                    {/* <button
                       className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-white border-2 border-button bg-button"
                       onClick={() => {
                         initiateCheckout({
@@ -239,7 +251,7 @@ const Noir = ({ loadIvory, loadRose, loadOlive }) => {
                       }}
                     >
                       Checkout
-                    </button>
+                    </button> */}
                   </li>
                 </ul>
               </div>
