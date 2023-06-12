@@ -5,8 +5,8 @@ import IvoryImages from "./Galleries/Ivory-images";
 
 import FAQDinnerware from "./FAQ";
 
-import products from "./products.json";
-
+// import products from "./products.json";
+import products from "@/Data/products.json";
 const Ivory = ({ loadNoir, loadRose, loadOlive }) => {
   const filteredProduct = products.filter((_, index) => index === 1);
   const {

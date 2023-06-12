@@ -1,78 +1,17 @@
-import { useState } from "react";
-
 import NiorImages from "./Galleries/Nior-images";
 import FAQDinnerware from "./FAQ";
 
-import products from "./products.json";
-// import products from "@/Data/products.json";
+import useCart from "hooks/use-cart";
 
-// Stripe
-import { initiateCheckout } from "@/lib/payments";
-
-const defaultCart = {
-  products: {},
-};
+import products from "@/Data/products.json";
 
 const Noir = ({ loadIvory, loadRose, loadOlive }) => {
+  const { subtotal, totalItems, addToCart, checkout } = useCart();
+
   const product = products.filter((_, index) => index === 0);
 
   // Set ID to Stripe price
   const id = "price_1NGNSUFRHqR6fk4W40bPDP0l";
-
-  const [cart, updateCart] = useState(defaultCart);
-
-  // console.log("product", product);
-  console.log("cart", cart);
-
-  const cartItems = Object.keys(cart.products).map((key) => {
-    const product = products.find(({ id }) => `${id}` === `${key}`);
-    return {
-      ...cart.products[key],
-      pricePerItem: product.price,
-    };
-  });
-
-  console.log("cartItems", cartItems);
-
-  const subtotal = cartItems.reduce(
-    (accumulator, { pricePerItem, quantity }) => {
-      return accumulator + pricePerItem * quantity;
-    },
-    0
-  );
-
-  console.log("subtotal", subtotal);
-
-  const totalItems = cartItems.reduce((accumulator, { quantity }) => {
-    return accumulator + quantity;
-  }, 0);
-
-  function addToCart({ id } = {}) {
-    updateCart((prev) => {
-      let cartState = { ...prev };
-
-      if (cartState.products[id]) {
-        cartState.products[id].quantity = cartState.products[id].quantity + 1;
-      } else {
-        cartState.products[id] = {
-          id,
-          quantity: 1,
-        };
-      }
-      return cartState;
-    });
-  }
-
-  function checkout() {
-    initiateCheckout({
-      lineItems: cartItems.map((item) => {
-        return {
-          price: item.id,
-          quantity: item.quantity,
-        };
-      }),
-    });
-  }
 
   return (
     <div>
