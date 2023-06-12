@@ -6,7 +6,10 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 
+import { useCart } from "@/hooks/use-cart";
+
 export default function NavMain() {
+  const { totalItems, checkout, subtotal } = useCart();
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -27,7 +30,7 @@ export default function NavMain() {
               className="h-8 w-8 text-neutral-600 hover:text-neutral-500 cursor-pointer"
               onClick={() => setOpen(true)}
             />
-            <span>2</span>
+            <span>{totalItems}</span>
           </div>
           <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -87,6 +90,8 @@ export default function NavMain() {
                           </div>
                           <div className="relative mt-6 flex-1 px-4 sm:px-6">
                             {/* Your content */}
+                            <button onClick={checkout}>checkout</button>
+                            <div>{subtotal}</div>
                           </div>
                         </div>
                       </Dialog.Panel>

@@ -1,16 +1,12 @@
-import { useState, createContext, useContext } from "react";
-
+import { useState } from "react";
 import { initiateCheckout } from "@/lib/payments";
-
 import products from "@/Data/products.json";
 
 const defaultCart = {
   products: {},
 };
 
-export const CartContext = createContext();
-
-export function useCartState() {
+export default function useCart() {
   const [cart, updateCart] = useState(defaultCart);
 
   const cartItems = Object.keys(cart.products).map((key) => {
@@ -69,8 +65,4 @@ export function useCartState() {
     addToCart,
     checkout,
   };
-}
-export function useCart() {
-  const cart = useContext(CartContext);
-  return cart;
 }

@@ -5,7 +5,7 @@
       "@/components/*": ["components/*"],
       "@/lib/*": ["lib/*"],
       "@/Data/*": ["Data/*"],
-      "@/hook/*": ["hook/8"]
+      "@/hooks/*": ["hooks/*"]
     }
   }
 }
