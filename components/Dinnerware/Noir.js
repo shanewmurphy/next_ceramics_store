@@ -1,4 +1,3 @@
-import { useState } from "react";
 import NiorImages from "./Galleries/Nior-images";
 import FAQDinnerware from "./FAQ";
 
@@ -7,7 +6,7 @@ import { useCart } from "hooks/use-cart";
 import products from "@/Data/products.json";
 
 export default function Noir({ loadIvory, loadRose, loadOlive }) {
-  const { subtotal, totalItems, addToCart, checkout } = useCart();
+  const { addToCart } = useCart();
 
   const product = products.filter((_, index) => index === 0);
 
@@ -16,11 +15,6 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
 
   return (
     <div>
-      {/* <div>Items: {totalItems}</div>
-      <div>Total Cost: {subtotal}</div>
-      <div>
-        <button onClick={checkout}>Checkout</button>
-      </div> */}
       <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto mt-20 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
         <div className="lg:w-6/12">
           <div className="lg:w-560 mx-auto lg:mb-6 md:mb-0">

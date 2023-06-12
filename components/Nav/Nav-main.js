@@ -10,6 +10,7 @@ import { useCart } from "@/hooks/use-cart";
 
 export default function NavMain() {
   const { totalItems, checkout, subtotal } = useCart();
+
   const [open, setOpen] = useState(false);
   return (
     <div>
@@ -27,10 +28,10 @@ export default function NavMain() {
           <div>BB</div>
           <div>
             <ShoppingBagIcon
-              className="h-8 w-8 text-neutral-600 hover:text-neutral-500 cursor-pointer"
+              className="h-8 w-8 text-neutral-600 hover:text-neutral-500 cursor-pointer relative"
               onClick={() => setOpen(true)}
             />
-            <span>{totalItems}</span>
+            <span className="absolute top-12 right-12">{totalItems}</span>
           </div>
           <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="relative z-10" onClose={setOpen}>
