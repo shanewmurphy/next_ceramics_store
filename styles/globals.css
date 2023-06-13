@@ -16,6 +16,10 @@ body {
   width: 100vw;
   object-fit: fill;
 }
+.img_fill{
+  width: 100vw;
+  object-fit: fill;
+}
 .crafted_hero_img {
   width: 100vw;
   object-fit: fill;

@@ -14,7 +14,7 @@ export function useCartState() {
   const [cart, updateCart] = useState(defaultCart);
 
   useEffect(() => {
-    const stateFromStorage = window.localStorage.getItem("spacejelly_cart");
+    const stateFromStorage = window.localStorage.getItem("Ceramics_Store");
     const data = stateFromStorage && JSON.parse(stateFromStorage);
     if (data) {
       updateCart(data);
@@ -23,7 +23,7 @@ export function useCartState() {
 
   useEffect(() => {
     const data = JSON.stringify(cart);
-    window.localStorage.setItem("spacejelly_cart", data);
+    window.localStorage.setItem("Ceramics_Store", data);
   }, [cart]);
 
   const cartItems = Object.keys(cart.products).map((key) => {
@@ -34,6 +34,28 @@ export function useCartState() {
     };
   });
 
+  // Remove item in cart
+  function removeFromCart({ id } = {}) {
+    updateCart((prev) => {
+      let cart = { ...prev };
+      delete cart.products[id]; // Remove the item from the cart
+      return cart;
+    });
+  }
+  // function removeFromCart({ id } = {}) {
+  //   updateCart((prev) => {
+  //     let cart = { ...prev };
+  //     if (cart.products[id]) {
+  //       const updatedQuantity = cart.products[id].quantity - 1;
+  //       if (updatedQuantity > 0) {
+  //         cart.products[id].quantity = updatedQuantity;
+  //       } else {
+  //         delete cart.products[id];
+  //       }
+  //     }
+  //     return cart;
+  //   });
+  // }
   //   console.log("cartItems", cartItems);
 
   const subtotal = cartItems.reduce(
@@ -77,10 +99,12 @@ export function useCartState() {
   return {
     cart,
     updateCart,
+    cartItems,
     subtotal,
     totalItems,
     addToCart,
     checkout,
+    removeFromCart,
   };
 }
 export function useCart() {

@@ -1,3 +1,5 @@
+import { useState } from "react";
+
 import NiorImages from "./Galleries/Nior-images";
 import FAQDinnerware from "./FAQ";
 
@@ -15,7 +17,7 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
 
   return (
     <div>
-      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto mt-20 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
+      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto lg:mt-20 md:mt20 sm:mt-8 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
         <div className="lg:w-6/12">
           <div className="lg:w-560 mx-auto lg:mb-6 md:mb-0">
             <NiorImages />
@@ -33,6 +35,7 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
               Colour,
               Shipping,
             } = products;
+
             return (
               <div key={id}>
                 <h2 className="text-text font-semibold lg:text-left md:text-center sm:text-center lg:text-3xl md:text-4xl sm:text-2xl antialiased">

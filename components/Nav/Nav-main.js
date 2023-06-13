@@ -6,10 +6,25 @@ import { XMarkIcon } from "@heroicons/react/24/outline";
 
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 
+import products from "@/Data/products.json";
 import { useCart } from "@/hooks/use-cart";
 
 export default function NavMain() {
-  const { totalItems, checkout, subtotal } = useCart();
+  const { totalItems, checkout, subtotal, cartItems, removeFromCart } =
+    useCart();
+
+  const data = cartItems.map((item) => {
+    const product = products.find(({ id }) => id === item.id);
+
+    return {
+      ...item,
+      total: item.quantity * item.pricePerItem,
+      title: product.ProductTitle,
+      colour: product.Colour,
+      price: product.price,
+      CartImageUrl: product.CartImageUrl,
+    };
+  });
 
   const [open, setOpen] = useState(false);
   return (
@@ -31,7 +46,9 @@ export default function NavMain() {
               className="h-8 w-8 text-neutral-600 hover:text-neutral-500 cursor-pointer relative"
               onClick={() => setOpen(true)}
             />
-            <span className="absolute top-12 right-12">{totalItems}</span>
+            <span className="absolute top-12 right-10 rounded-full text-sm bg-button text-white text-center align-middle w-6 h-6">
+              {totalItems}
+            </span>
           </div>
           <Transition.Root show={open} as={Fragment}>
             <Dialog as="div" className="relative z-10" onClose={setOpen}>
@@ -72,7 +89,7 @@ export default function NavMain() {
                           <div className="absolute right-0 top-2 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4">
                             <button
                               type="button"
-                              className="text-button hover:text-amber-700 focus:ring-white"
+                              className="text-button hover:text-amber-70"
                               onClick={() => setOpen(false)}
                             >
                               <span className="sr-only">Close panel</span>
@@ -86,13 +103,64 @@ export default function NavMain() {
                         <div className="flex h-full flex-col overflow-y-scroll bg-background py-6 shadow-xl">
                           <div className="px-4 sm:px-6">
                             <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
-                              Panel title
+                              Your Cart
                             </Dialog.Title>
                           </div>
                           <div className="relative mt-6 flex-1 px-4 sm:px-6">
-                            {/* Your content */}
-                            <button onClick={checkout}>checkout</button>
-                            <div>{subtotal}</div>
+                            {data.map((item) => {
+                              return (
+                                <div key={item.title}>
+                                  <div className="flex flex-row gap-4 mb-4">
+                                    <div className="basis-1/3 text-center">
+                                      <Image
+                                        className="img_fill rounded-lg"
+                                        src={item.CartImageUrl}
+                                        width={100}
+                                        height={100}
+                                        alt={item.ProductTitle}
+                                      />
+                                    </div>
+                                    <div className="basis-2/3">
+                                      <h4 className="text-base font-semibold text-gray align-top mb-1">
+                                        {item.title}
+                                      </h4>
+                                      <h5 className="text-xs font-medium text-gray mb-1">
+                                        Colour: {item.colour}
+                                      </h5>
+                                      <h5 className="text-base font-medium text-gray mb-1">
+                                        €{item.price}
+                                      </h5>
+                                      <h5 className="text-sm text-gray mb-2">
+                                        Qty: {item.quantity}
+                                      </h5>
+                                      <h6 className="text-right text-sm underline">
+                                        <button
+                                          onClick={() =>
+                                            removeFromCart({ id: item.id })
+                                          }
+                                        >
+                                          Remove
+                                        </button>
+                                      </h6>
+                                    </div>
+                                  </div>
+                                </div>
+                              );
+                            })}
+                            <div className="flex flex-col w-11/12 absolute bottom-0 mb-12">
+                              <div className="flex justify-between mb-4">
+                                <div>Total</div>
+                                <div>€{subtotal}</div>
+                              </div>
+                              <div>
+                                <button
+                                  className="w-full bg-button text-xl font-bold text-white mx-auto py-4 antialiased"
+                                  onClick={checkout}
+                                >
+                                  Checkout Now
+                                </button>
+                              </div>
+                            </div>
                           </div>
                         </div>
                       </Dialog.Panel>
