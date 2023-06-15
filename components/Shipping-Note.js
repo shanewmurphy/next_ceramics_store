@@ -1,6 +1,6 @@
 export default function ShippingNote() {
   return (
-    <div className="bg-sand w-full">
+    <div className="bg-sand w-full lg:block md:block sm:hidden">
       <h1 className="py-2 lg:text-text-base md:text-base sm:text-sm text-center font-semibold text-stone-700 antialiased">
         Free shipping orders over €70
       </h1>

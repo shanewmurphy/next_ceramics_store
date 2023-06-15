@@ -124,10 +124,10 @@ export default function NavMain() {
                                       <h4 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray align-top lg:mb-1 md:mb-1 sm:mb-1 antialiased">
                                         {item.title}
                                       </h4>
-                                      <h5 className="text-xs font-medium text-gray mb-1 antialiased">
+                                      <h5 className="text-xs font-semibold text-gray mb-1 antialiased">
                                         Colour: {item.colour}
                                       </h5>
-                                      <h5 className="lg:text-base md:text-base sm:text-sm font-medium text-gray mb-1 antialiased">
+                                      <h5 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray mb-1 antialiased">
                                         €{item.price}
                                       </h5>
                                       <div className="flex justify-between">

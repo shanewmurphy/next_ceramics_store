@@ -29,7 +29,7 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
 
   return (
     <div>
-      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto lg:mt-20 md:mt20 sm:mt-8 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
+      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto lg:mt-20 md:mt20 sm:mt-24 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
         <div className="lg:w-6/12">
           <div className="lg:w-560 mx-auto lg:mb-6 md:mb-0">
             <NiorImages />
@@ -95,7 +95,7 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
                   <div className="flex flex-row justify-center lg:hidden md:hidden sm:flex mx-auto mt-6 mb-6 gap-2">
                     <div>
                       <button
-                        className="w-72 py-4  text-center text-white bg-button"
+                        className="w-72 py-4 text-lg text-center font-semibold text-white bg-button antialiased"
                         onClick={handleAddToCart}
                       >
                         {buttonText}
@@ -154,7 +154,7 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
                 <ul className="lg:inline-flex md:inline-flex mt-4">
                   <li>
                     <button
-                      className="w-80 py-4  text-center text-white bg-button"
+                      className="w-80 py-4 text-lg font-semibold text-center text-white bg-button antialiased"
                       onClick={handleAddToCart}
                     >
                       {buttonText}
