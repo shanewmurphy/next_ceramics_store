@@ -1,4 +1,3 @@
-import Link from "next/link";
 import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
@@ -102,11 +101,12 @@ export default function NavMain() {
                         </Transition.Child>
                         <div className="flex h-full flex-col overflow-y-scroll bg-background py-6 shadow-xl">
                           <div className="px-4 sm:px-6">
-                            <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
-                              Your Cart
-                            </Dialog.Title>
+                            <Dialog.Title className="text-base font-semibold leading-6 text-gray-900"></Dialog.Title>
                           </div>
-                          <div className="relative lg:w-10/12 md:w-80 sm:w-80 mx-auto mt-6 flex-1">
+                          <div className="relative lg:w-10/12 md:w-80 sm:w-80 mx-auto mt-8 flex-1">
+                            <div className="mb-4 text-text font-semibold">
+                              Your Cart Items ({totalItems})
+                            </div>
                             {data.map((item) => {
                               return (
                                 <div key={item.title}>
@@ -121,27 +121,34 @@ export default function NavMain() {
                                       />
                                     </div>
                                     <div className="basis-2/3">
-                                      <h4 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray align-top mb-1">
+                                      <h4 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray align-top lg:mb-1 md:mb-1 sm:mb-1 antialiased">
                                         {item.title}
                                       </h4>
-                                      <h5 className="text-xs font-medium text-gray mb-1">
+                                      <h5 className="text-xs font-medium text-gray mb-1 antialiased">
                                         Colour: {item.colour}
                                       </h5>
-                                      <h5 className="lg:text-base md:text-base sm:text-sm font-medium text-gray mb-1">
+                                      <h5 className="lg:text-base md:text-base sm:text-sm font-medium text-gray mb-1 antialiased">
                                         €{item.price}
                                       </h5>
-                                      <h5 className="text-sm text-gray mb-2">
-                                        Qty: {item.quantity}
-                                      </h5>
-                                      <h6 className="text-right text-sm underline">
-                                        <button
-                                          onClick={() =>
-                                            removeFromCart({ id: item.id })
-                                          }
-                                        >
-                                          Remove
-                                        </button>
-                                      </h6>
+                                      <div className="flex justify-between">
+                                        <div>
+                                          <h5 className="text-sm text-gray mb-2 font-semibold antialiased">
+                                            Qty: {item.quantity}
+                                          </h5>
+                                        </div>
+                                        <div>
+                                          <h6 className="text-right text-sm font-semibold text-text antialiased">
+                                            <button
+                                              className="underline"
+                                              onClick={() =>
+                                                removeFromCart({ id: item.id })
+                                              }
+                                            >
+                                              Remove
+                                            </button>
+                                          </h6>
+                                        </div>
+                                      </div>
                                     </div>
                                   </div>
                                 </div>
@@ -149,8 +156,12 @@ export default function NavMain() {
                             })}
                             <div className="flex flex-col lg:w-full md:w-80 sm:w-full mx-auto absolute bottom-0 mb-12">
                               <div className="flex justify-between mb-4">
-                                <div>Total</div>
-                                <div>€{subtotal}</div>
+                                <div className="font-bold text-lg text-text antialiased">
+                                  Total
+                                </div>
+                                <div className="font-bold text-lg text-text antialiased">
+                                  €{subtotal}
+                                </div>
                               </div>
                               <div>
                                 <button

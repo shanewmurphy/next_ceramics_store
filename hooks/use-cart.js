@@ -42,21 +42,6 @@ export function useCartState() {
       return cart;
     });
   }
-  // function removeFromCart({ id } = {}) {
-  //   updateCart((prev) => {
-  //     let cart = { ...prev };
-  //     if (cart.products[id]) {
-  //       const updatedQuantity = cart.products[id].quantity - 1;
-  //       if (updatedQuantity > 0) {
-  //         cart.products[id].quantity = updatedQuantity;
-  //       } else {
-  //         delete cart.products[id];
-  //       }
-  //     }
-  //     return cart;
-  //   });
-  // }
-  //   console.log("cartItems", cartItems);
 
   const subtotal = cartItems.reduce(
     (accumulator, { pricePerItem, quantity }) => {
