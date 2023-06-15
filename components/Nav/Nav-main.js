@@ -66,7 +66,7 @@ export default function NavMain() {
 
               <div className="fixed inset-0 overflow-hidden">
                 <div className="absolute inset-0 overflow-hidden">
-                  <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full pl-10">
+                  <div className="pointer-events-none fixed inset-y-0 right-0 flex max-w-full">
                     <Transition.Child
                       as={Fragment}
                       enter="transform transition ease-in-out duration-500 sm:duration-700"
@@ -106,7 +106,7 @@ export default function NavMain() {
                               Your Cart
                             </Dialog.Title>
                           </div>
-                          <div className="relative mt-6 flex-1 px-4 sm:px-6">
+                          <div className="relative lg:w-10/12 md:w-80 sm:w-80 mx-auto mt-6 flex-1">
                             {data.map((item) => {
                               return (
                                 <div key={item.title}>
@@ -121,13 +121,13 @@ export default function NavMain() {
                                       />
                                     </div>
                                     <div className="basis-2/3">
-                                      <h4 className="text-base font-semibold text-gray align-top mb-1">
+                                      <h4 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray align-top mb-1">
                                         {item.title}
                                       </h4>
                                       <h5 className="text-xs font-medium text-gray mb-1">
                                         Colour: {item.colour}
                                       </h5>
-                                      <h5 className="text-base font-medium text-gray mb-1">
+                                      <h5 className="lg:text-base md:text-base sm:text-sm font-medium text-gray mb-1">
                                         €{item.price}
                                       </h5>
                                       <h5 className="text-sm text-gray mb-2">
@@ -147,7 +147,7 @@ export default function NavMain() {
                                 </div>
                               );
                             })}
-                            <div className="flex flex-col w-11/12 absolute bottom-0 mb-12">
+                            <div className="flex flex-col lg:w-full md:w-80 sm:w-full mx-auto absolute bottom-0 mb-12">
                               <div className="flex justify-between mb-4">
                                 <div>Total</div>
                                 <div>€{subtotal}</div>

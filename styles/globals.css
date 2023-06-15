@@ -16,7 +16,7 @@ body {
   width: 100vw;
   object-fit: fill;
 }
-.img_fill{
+.img_fill {
   width: 100vw;
   object-fit: fill;
 }
@@ -138,7 +138,22 @@ body {
   width: 100%;
   background-color: #e6dcd5;
 }
+@keyframes close-dialog {
+  0% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  100% {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
 
+.animate-close-dialog {
+  animation-name: close-dialog;
+  animation-duration: 0.5s; /* Adjust the duration as needed */
+  animation-timing-function: ease-out; /* Adjust the timing function as needed */
+}
 @media screen and (max-width: 900px) {
   .Link_container button {
     width: 190px;

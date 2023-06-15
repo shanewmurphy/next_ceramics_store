@@ -8,12 +8,24 @@ import { useCart } from "hooks/use-cart";
 import products from "@/Data/products.json";
 
 export default function Noir({ loadIvory, loadRose, loadOlive }) {
+  const [buttonText, setButtonText] = useState("Add to Cart");
   const { addToCart } = useCart();
 
   const product = products.filter((_, index) => index === 0);
 
   // Set ID to Stripe price
   const id = "price_1NGNSUFRHqR6fk4W40bPDP0l";
+
+  const handleAddToCart = () => {
+    setButtonText("Added");
+    setTimeout(() => {
+      setButtonText("Add to Cart");
+    }, 2000);
+
+    addToCart({
+      id: id,
+    });
+  };
 
   return (
     <div>
@@ -83,32 +95,11 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
                   <div className="flex flex-row justify-center lg:hidden md:hidden sm:flex mx-auto mt-6 mb-6 gap-2">
                     <div>
                       <button
-                        className="w-56 py-4 px-6  text-white bg-button"
-                        onClick={() => {
-                          addToCart({
-                            id,
-                          });
-                        }}
+                        className="w-72 py-4  text-center text-white bg-button"
+                        onClick={handleAddToCart}
                       >
-                        Add to Cart
+                        {buttonText}
                       </button>
-                    </div>
-                    <div>
-                      {/* <button
-                        className="w-40 py-2 px-6 border-2 text-white border-button bg-button"
-                        onClick={() => {
-                          initiateCheckout({
-                            lineItems: [
-                              {
-                                price: id,
-                                quantity: 1,
-                              },
-                            ],
-                          });
-                        }}
-                      >
-                        Checkout
-                      </button> */}
                     </div>
                   </div>
                 </div>
@@ -163,14 +154,10 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
                 <ul className="lg:inline-flex md:inline-flex mt-4">
                   <li>
                     <button
-                      className="lg:px-24 lg:py-4 md:px-20 md:py-4 text-center text-white bg-button"
-                      onClick={() => {
-                        addToCart({
-                          id,
-                        });
-                      }}
+                      className="w-80 py-4  text-center text-white bg-button"
+                      onClick={handleAddToCart}
                     >
-                      Add to Cart
+                      {buttonText}
                     </button>
                   </li>
                   <li className="ml-6">
