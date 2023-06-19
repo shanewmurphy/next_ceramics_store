@@ -160,23 +160,6 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
                       {buttonText}
                     </button>
                   </li>
-                  <li className="ml-6">
-                    {/* <button
-                      className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-white border-2 border-button bg-button"
-                      onClick={() => {
-                        initiateCheckout({
-                          lineItems: [
-                            {
-                              price: id,
-                              quantity: 1,
-                            },
-                          ],
-                        });
-                      }}
-                    >
-                      Checkout
-                    </button> */}
-                  </li>
                 </ul>
               </div>
               <div>{/* <FAQDinnerware /> */}</div>

@@ -1,18 +1,30 @@
-import Link from "next/link";
+import { useState } from "react";
 
 import IvoryImages from "./Galleries/Ivory-images";
-// import FAQDinnerware from "./FAQ";
-
-import products from "@/Data/products.json";
 
 import { useCart } from "hooks/use-cart";
 
+import products from "@/Data/products.json";
+
 const Ivory = ({ loadNoir, loadRose, loadOlive }) => {
+  const [buttonText, setButtonText] = useState("Add to Cart");
   const { addToCart } = useCart();
-  const filteredProduct = products.filter((_, index) => index === 4);
+
+  const filteredProduct = products.filter((_, index) => index === 5);
 
   // Set ID to Stripe price fot Ivory
-  const id = "price_1NGNUGFRHqR6fk4W0RaL1dZe";
+  const id = "price_1NKfamFRHqR6fk4WygeAfG2k";
+
+  const handleAddToCart = () => {
+    setButtonText("Added");
+    setTimeout(() => {
+      setButtonText("Add to Cart");
+    }, 2000);
+
+    addToCart({
+      id: id,
+    });
+  };
 
   return (
     <div>
@@ -73,14 +85,10 @@ const Ivory = ({ loadNoir, loadRose, loadOlive }) => {
                   <div className="flex flex-row justify-center lg:hidden md:hidden sm:flex mx-auto mt-6 mb-6 gap-2">
                     <div>
                       <button
-                        className="w-36 py-2 px-6 text-button border-2 border-button"
-                        onClick={() => {
-                          addToCart({
-                            id,
-                          });
-                        }}
+                        className="w-72 py-4 text-lg text-center font-semibold text-white bg-button antialiased"
+                        onClick={handleAddToCart}
                       >
-                        Add to Cart
+                        {buttonText}
                       </button>
                     </div>
                   </div>
@@ -135,19 +143,15 @@ const Ivory = ({ loadNoir, loadRose, loadOlive }) => {
                 <ul className="lg:inline-flex md:inline-flex mt-4">
                   <li>
                     <button
-                      className="lg:px-24 lg:py-4 md:px-20 md:py-4 text-center text-white bg-button"
-                      onClick={() => {
-                        addToCart({
-                          id,
-                        });
-                      }}
+                      className="w-80 py-4 text-lg font-semibold text-center text-white bg-button antialiased"
+                      onClick={handleAddToCart}
                     >
-                      Add to Cart
+                      {buttonText}
                     </button>
                   </li>
                 </ul>
               </div>
-              <div>{/* <FAQDinnerware /> */}</div>
+              <div></div>
             </div>
           </div>
         </div>

@@ -1,19 +1,20 @@
 import { useState } from "react";
 
-import RoseImages from "./Galleries/Rose-images";
+import OliveImages from "./Galleries/Olive-images";
 // import FAQDinnerware from "./FAQ";
 
 import products from "@/Data/products.json";
 
 import { useCart } from "hooks/use-cart";
 
-const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
+const Olive = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
   const [buttonText, setButtonText] = useState("Add to Cart");
   const { addToCart } = useCart();
-  const filteredProduct = products.filter((_, index) => index === 7);
+
+  const filteredProduct = products.filter((_, index) => index === 10);
 
   // Set ID to Stripe price
-  const id = "price_1NKjeKFRHqR6fk4Wpa64DRuw";
+  const id = "price_1NKlxHFRHqR6fk4WmbKFlBhY";
 
   const handleAddToCart = () => {
     setButtonText("Added");
@@ -25,14 +26,13 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
       id: id,
     });
   };
-
   return (
     <div>
       <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto mt-20 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
         <div className="lg:w-6/12">
           <div className="lg:w-560 mx-auto lg:mb-6 md:mb-0">
             <div>
-              <RoseImages />
+              <OliveImages />
             </div>
           </div>
         </div>
@@ -70,17 +70,18 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                         </button>
                       </li>
                       <li className="pl-6">
-                        <button onClick={loadOlive}>
-                          <span className="dot_olive"></span>
+                        <button>
+                          <span className="dot_olive outline outline-offset-2 outline-2 outline-neutral-500"></span>
                         </button>
                       </li>
                       <li className="pl-6">
                         <button onClick={loadRose}>
-                          <span className="dot_maroon outline outline-offset-2 outline-2 outline-neutral-500"></span>
+                          <span className="dot_maroon"></span>
                         </button>
                       </li>
                     </ul>
                   </div>
+
                   {/* Checkout button mobile */}
                   <div className="flex flex-row justify-center lg:hidden md:hidden sm:flex mx-auto mt-6 mb-6 gap-2">
                     <div>
@@ -118,12 +119,12 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                       </li>
                       <li className="pl-6">
                         <button onClick={loadOlive}>
-                          <span className="dot_olive"></span>
+                          <span className="dot_olive outline outline-offset-2 outline-2 outline-neutral-500"></span>
                         </button>
                       </li>
                       <li className="pl-6">
                         <button onClick={loadRose}>
-                          <span className="dot_maroon outline outline-offset-2 outline-2 outline-neutral-500"></span>
+                          <span className="dot_maroon"></span>
                         </button>
                       </li>
                     </ul>
@@ -160,4 +161,4 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
   );
 };
 
-export default Rose;
+export default Olive;

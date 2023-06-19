@@ -10,10 +10,11 @@ import { useCart } from "hooks/use-cart";
 const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
   const [buttonText, setButtonText] = useState("Add to Cart");
   const { addToCart } = useCart();
-  const filteredProduct = products.filter((_, index) => index === 7);
+
+  const filteredProduct = products.filter((_, index) => index === 11);
 
   // Set ID to Stripe price
-  const id = "price_1NKjeKFRHqR6fk4Wpa64DRuw";
+  const id = "price_1NKlxqFRHqR6fk4WAM2Lq6Zm";
 
   const handleAddToCart = () => {
     setButtonText("Added");

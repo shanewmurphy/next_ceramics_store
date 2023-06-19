@@ -1,19 +1,20 @@
 import { useState } from "react";
 
-import RoseImages from "./Galleries/Rose-images";
+import NiorImages from "./Galleries/Nior-images";
 // import FAQDinnerware from "./FAQ";
-
-import products from "@/Data/products.json";
 
 import { useCart } from "hooks/use-cart";
 
-const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
+import products from "@/Data/products.json";
+
+export default function Noir({ loadIvory, loadRose, loadOlive }) {
   const [buttonText, setButtonText] = useState("Add to Cart");
   const { addToCart } = useCart();
-  const filteredProduct = products.filter((_, index) => index === 7);
+
+  const product = products.filter((_, index) => index === 8);
 
   // Set ID to Stripe price
-  const id = "price_1NKjeKFRHqR6fk4Wpa64DRuw";
+  const id = "price_1NKlw9FRHqR6fk4WZnDhQBQS";
 
   const handleAddToCart = () => {
     setButtonText("Added");
@@ -28,40 +29,49 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
 
   return (
     <div>
-      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto mt-20 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
+      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto lg:mt-20 md:mt20 sm:mt-24 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
         <div className="lg:w-6/12">
           <div className="lg:w-560 mx-auto lg:mb-6 md:mb-0">
-            <div>
-              <RoseImages />
-            </div>
+            <NiorImages />
           </div>
         </div>
         <div className="lg:w-6/12">
-          <div>
-            {filteredProduct.map((product) => (
-              <div key={product.id}>
+          {product.map((products) => {
+            const {
+              id,
+              ProductTitle,
+              Set,
+              descriptionLong,
+              descriptionShort,
+              price,
+              Colour,
+              Shipping,
+            } = products;
+
+            return (
+              <div key={id}>
                 <h2 className="text-text font-semibold lg:text-left md:text-center sm:text-center lg:text-3xl md:text-4xl sm:text-2xl antialiased">
-                  {product.ProductTitle}
+                  {ProductTitle}
                   <span className="text-text lg:text-base md:text-lg sm:text-sm font-medium pl-2">
-                    {product.Set}
+                    {Set}
                   </span>
                 </h2>
                 <h3 className="text-text font-bold lg:text-2xl md:text-xl sm:text-2xl lg:text-left md:text-center sm:text-center lg:mt-4 md:mt-6 sm:mt-4 antialiased">
-                  €{product.price}
+                  €{price}
                   <span className="text-text font-medium text-sm pl-2">
                     Inc Vat
                   </span>
                 </h3>
                 <div className="w-1/2 mx-auto lg:mt-8 md:mt-6 sm:mt-6 lg:hidden md:block sm:block">
                   <div className="text-text text-center font-medium text-base antialiased">
-                    Colour:<span className="pl-1">{product.Colour}</span>
+                    Colour:<span className="pl-1">{Colour}</span>
                   </div>
                   {/* Colour swatches Mobile */}
                   <div className="mt-4 mx-auto text-center">
                     <ul className="inline-flex">
                       <li>
-                        <button onClick={loadNoir}>
-                          <span className="dot_black"></span>
+                        <button onClick={loadIvory}>
+                          <span className="dot_black outline outline-offset-2 outline-2 outline-neutral-500"></span>
                         </button>
                       </li>
                       <li className="pl-6">
@@ -76,7 +86,7 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                       </li>
                       <li className="pl-6">
                         <button onClick={loadRose}>
-                          <span className="dot_maroon outline outline-offset-2 outline-2 outline-neutral-500"></span>
+                          <span className="dot_maroon"></span>
                         </button>
                       </li>
                     </ul>
@@ -94,21 +104,21 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                   </div>
                 </div>
                 <p className="text-text font-medium text-sm lg:mt-4 md:mt-6 sm:mt-4 antialiased">
-                  {product.descriptionShort}
+                  {descriptionShort}
                 </p>
                 <p className="text-text font-medium text-sm lg:mt-4 md:mt-6 sm:mt-4 antialiased">
-                  {product.descriptionLong}
+                  {descriptionLong}
                 </p>
                 {/* Colour swatches Desktop */}
                 <div className="lg:mt-8 md:mt-6 sm:mt-6 lg:block md:hidden sm:hidden">
                   <div className="text-text font-medium text-base antialiased">
-                    Colour:<span className="pl-1">{product.Colour}</span>
+                    Colour:<span className="pl-1">{Colour}</span>
                   </div>
-                  <div className="mt-2">
-                    <ul className="inline-flex mt-2">
+                  <div className="mt-4">
+                    <ul className="inline-flex text-center">
                       <li>
-                        <button onClick={loadNoir}>
-                          <span className="dot_black"></span>
+                        <button>
+                          <span className="dot_black outline outline-offset-2 outline-2 outline-neutral-500"></span>
                         </button>
                       </li>
                       <li className="pl-6">
@@ -123,7 +133,7 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                       </li>
                       <li className="pl-6">
                         <button onClick={loadRose}>
-                          <span className="dot_maroon outline outline-offset-2 outline-2 outline-neutral-500"></span>
+                          <span className="dot_maroon"></span>
                         </button>
                       </li>
                     </ul>
@@ -131,33 +141,32 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                 </div>
                 <div className="lg:mt-6 md:mt-6 sm:mt-4">
                   <h4 className="text-text font-semibold lg:text-sm md:text-base sm:text-sm antialiased">
-                    {product.Shipping}
+                    {Shipping}
                   </h4>
                 </div>
               </div>
-            ))}
+            );
+          })}
+          <div>
             <div>
-              <div>
-                <div className="flex lg:text-left sm:text-center md:text-center lg:row md:row sm:col mt-6 lg:block md:block sm:hidden">
-                  <ul className="lg:inline-flex md:inline-flex mt-4">
-                    <li>
-                      <button
-                        className="w-80 py-4 text-lg font-semibold text-center text-white bg-button antialiased"
-                        onClick={handleAddToCart}
-                      >
-                        {buttonText}
-                      </button>
-                    </li>
-                  </ul>
-                </div>
-                <div>{/* <FAQDinnerware /> */}</div>
+              {/* Checkout Desktop */}
+              <div className="flex lg:text-left sm:text-center md:text-center lg:row md:row sm:col mt-6 lg:block md:block sm:hidden">
+                <ul className="lg:inline-flex md:inline-flex mt-4">
+                  <li>
+                    <button
+                      className="w-80 py-4 text-lg font-semibold text-center text-white bg-button antialiased"
+                      onClick={handleAddToCart}
+                    >
+                      {buttonText}
+                    </button>
+                  </li>
+                </ul>
               </div>
+              <div>{/* <FAQDinnerware /> */}</div>
             </div>
           </div>
         </div>
       </div>
     </div>
   );
-};
-
-export default Rose;
+}

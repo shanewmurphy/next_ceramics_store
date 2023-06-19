@@ -117,7 +117,7 @@ export default function NavMain() {
                                         src={item.CartImageUrl}
                                         width={100}
                                         height={100}
-                                        alt={item.ProductTitle}
+                                        alt="Product Cart Image"
                                       />
                                     </div>
                                     <div className="basis-2/3">
