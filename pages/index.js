@@ -27,8 +27,12 @@ export default function Home() {
         <BestSellers />
         <BestSellersMobile />
       </div>
+      <div></div>
       <div className="w-10/12 mx-auto">
         <Link href="/Dinnerware-Collection">A</Link>
+      </div>
+      <div>
+        <Link href="/Bowels-Collection">B</Link>
       </div>
       <div>
         <Crafted />

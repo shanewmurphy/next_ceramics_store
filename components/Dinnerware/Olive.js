@@ -3,20 +3,28 @@ import { useState } from "react";
 import OliveImages from "./Galleries/Olive-images";
 import FAQDinnerware from "./FAQ";
 
-import products from "./products.json";
+import products from "@/Data/products.json";
+
+import { useCart } from "hooks/use-cart";
 
 const Olive = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
+  const [buttonText, setButtonText] = useState("Add to Cart");
+  const { addToCart } = useCart();
   const filteredProduct = products.filter((_, index) => index === 2);
-  const {
-    ProductTitle,
-    Set,
-    Price,
-    Colour,
-    Shiiping,
-    descriptionShort,
-    descriptionLong,
-    id,
-  } = products;
+
+  // Set ID to Stripe price
+  const id = "price_1NKfWdFRHqR6fk4WOBgq9A28";
+
+  const handleAddToCart = () => {
+    setButtonText("Added");
+    setTimeout(() => {
+      setButtonText("Add to Cart");
+    }, 2000);
+
+    addToCart({
+      id: id,
+    });
+  };
   return (
     <div>
       <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto mt-20 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
@@ -38,7 +46,7 @@ const Olive = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                   </span>
                 </h2>
                 <h3 className="text-text font-bold lg:text-2xl md:text-xl sm:text-2xl lg:text-left md:text-center sm:text-center lg:mt-4 md:mt-6 sm:mt-4 antialiased">
-                  {product.Price}
+                  €{product.price}
                   <span className="text-text font-medium text-sm pl-2">
                     Inc Vat
                   </span>
@@ -76,13 +84,11 @@ const Olive = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                   {/* Checkout button mobile */}
                   <div className="flex flex-row justify-center lg:hidden md:hidden sm:flex mx-auto mt-6 mb-6 gap-2">
                     <div>
-                      <button className="w-36 py-2 px-6 text-button border-2 border-button">
-                        Add to Cart
-                      </button>
-                    </div>
-                    <div>
-                      <button className="w-40 py-2 px-6 border-2 text-white border-button bg-button">
-                        Checkout
+                      <button
+                        className="w-72 py-4 text-lg text-center font-semibold text-white bg-button antialiased"
+                        onClick={handleAddToCart}
+                      >
+                        {buttonText}
                       </button>
                     </div>
                   </div>
@@ -135,13 +141,11 @@ const Olive = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                 <div className="flex lg:text-left sm:text-center md:text-center lg:row md:row sm:col mt-6 lg:block md:block sm:hidden">
                   <ul className="lg:inline-flex md:inline-flex mt-4">
                     <li>
-                      <button className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-button border-2 border-button">
-                        Add to Cart
-                      </button>
-                    </li>
-                    <li className="ml-6">
-                      <button className="lg:px-20 lg:py-4 md:px-20 md:py-4 text-center text-white border-2 border-button bg-button">
-                        Checkout
+                      <button
+                        className="w-80 py-4 text-lg font-semibold text-center text-white bg-button antialiased"
+                        onClick={handleAddToCart}
+                      >
+                        {buttonText}
                       </button>
                     </li>
                   </ul>

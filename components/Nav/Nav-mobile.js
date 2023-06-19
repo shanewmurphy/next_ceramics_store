@@ -2,6 +2,7 @@ import Image from "next/image";
 import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
+import { Bar2Icon } from "@heroicons/react/24/outline";
 
 import { ShoppingBagIcon } from "@heroicons/react/24/outline";
 
@@ -31,16 +32,19 @@ export default function NavMobile() {
     <div>
       <div className="fixed w-full top-0 z-10">
         <div>
-          <h1 className="pt-1 h-6 bg-sand w-full lg:text-text-base md:text-base sm:text-xs text-center font-semibold text-stone-700 antialiased">
+          <h1 className="pt-1 h-6 bg-sand w-full lg:text-text-base md:text-base sm:text-xs text-center font-semibold text-text antialiased">
             Free shipping orders over €70
           </h1>
         </div>
-        <div className="flex w-full mx-auto bg-sand justify-between items-center p-2">
-          <div>Menu</div>
-          <div>Logo</div>
+        <div className="flex w-full mx-auto bg-sand justify-between items-center px-4 py-2">
+          <div className="text-text font-semibold pl-1 antialiased">
+            <span className="h-4 w-4"></span>
+            Menu
+          </div>
+          {/* <div>Logo</div> */}
           <div>
             <ShoppingBagIcon
-              className="h-8 w-8 mr-4 text-neutral-600 hover:text-neutral-500 cursor-pointer relative"
+              className="h-8 w-8 mr-2 text-text hover:text-green cursor-pointer relative"
               onClick={() => setOpen(true)}
             />
             <span className="absolute top-8 right-2 rounded-full text-sm bg-button text-white text-center align-middle w-6 h-6">
@@ -154,7 +158,7 @@ export default function NavMobile() {
                                     </div>
                                   );
                                 })}
-                                <div className="flex flex-col lg:w-full md:w-80 sm:w-full mx-auto absolute bottom-0 mb-12">
+                                <div className="flex flex-col lg:w-full md:w-80 sm:w-full mx-auto absolute bottom-0 mb-4">
                                   <div className="flex justify-between mb-4">
                                     <div className="font-bold text-lg text-text antialiased">
                                       Total

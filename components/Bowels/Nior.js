@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import NiorImages from "./Galleries/Nior-images";
-import FAQDinnerware from "./FAQ";
+// import FAQDinnerware from "./FAQ";
 
 import { useCart } from "hooks/use-cart";
 
@@ -11,10 +11,10 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
   const [buttonText, setButtonText] = useState("Add to Cart");
   const { addToCart } = useCart();
 
-  const product = products.filter((_, index) => index === 0);
+  const product = products.filter((_, index) => index === 4);
 
   // Set ID to Stripe price
-  const id = "price_1NGNSUFRHqR6fk4W40bPDP0l";
+  const id = "price_1NKfZiFRHqR6fk4WemQJiSPY";
 
   const handleAddToCart = () => {
     setButtonText("Added");
@@ -179,9 +179,7 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
                   </li>
                 </ul>
               </div>
-              <div>
-                <FAQDinnerware />
-              </div>
+              <div>{/* <FAQDinnerware /> */}</div>
             </div>
           </div>
         </div>
