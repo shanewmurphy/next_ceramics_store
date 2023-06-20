@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import OliveImages from "./Galleries/Olive-images";
-// import FAQDinnerware from "./FAQ";
+import FAQBowels from "./FAQ-Bowels";
 
 import products from "@/Data/products.json";
 
@@ -150,7 +150,9 @@ const Olive = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
                     </li>
                   </ul>
                 </div>
-                <div>{/* <FAQDinnerware /> */}</div>
+                <div>
+                  <FAQBowels />
+                </div>
               </div>
             </div>
           </div>

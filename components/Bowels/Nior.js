@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import NiorImages from "./Galleries/Nior-images";
-// import FAQDinnerware from "./FAQ";
+import FAQBowels from "./FAQ-Bowels";
 
 import { useCart } from "hooks/use-cart";
 
@@ -162,7 +162,9 @@ export default function Noir({ loadIvory, loadRose, loadOlive }) {
                   </li>
                 </ul>
               </div>
-              <div>{/* <FAQDinnerware /> */}</div>
+              <div>
+                <FAQBowels />
+              </div>
             </div>
           </div>
         </div>

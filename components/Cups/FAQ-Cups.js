@@ -1,6 +1,6 @@
 import { Disclosure } from "@headlessui/react";
 import { ChevronUpIcon } from "@heroicons/react/20/solid";
-export default function FAQDinnerware() {
+export default function FAQCups() {
   return (
     <div>
       <div>
@@ -46,14 +46,8 @@ export default function FAQDinnerware() {
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
                     <ul className="list-disc list-outside pl-6">
-                      <li>
-                        Big Plate : ∅ 26 CM / 10.1 in ; Height: 2 CM / 0.7 in
-                      </li>
-                      <li>
-                        Small Plate : ∅ 19 CM / 7.4 in ; Height: 2 CM / 0.7 in
-                      </li>
-                      <li>Bowl : ∅ 13 CM / 5.1 in ; Height: 7 CM / 2.7 in</li>
-                      <li>Cup: : ∅ 8.5 CM / 3.3 in ; Height: 10 CM / 3.9 in</li>
+                      <li>∅ 8.5 CM / 3.3 in</li>
+                      <li>H: 10 CM / 3.9 in</li>
                     </ul>
                   </Disclosure.Panel>
                 </>
@@ -73,9 +67,6 @@ export default function FAQDinnerware() {
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
                     <ul className="list-disc list-outside pl-6">
                       <li>Delivery in 3-5 business days.</li>
-                      <li>
-                        Small Plate : ∅ 19 CM / 7.4 in ; Height: 2 CM / 0.7 in
-                      </li>
                       <li>
                         Standard shipping: €10 EUR (Free on orders above €70
                         EUR)

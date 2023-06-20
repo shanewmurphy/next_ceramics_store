@@ -149,15 +149,14 @@ body {
   }
 }
 
-.animate-close-dialog {
-  animation-name: close-dialog;
-  animation-duration: 0.5s; /* Adjust the duration as needed */
-  animation-timing-function: ease-out; /* Adjust the timing function as needed */
-}
 @media screen and (max-width: 900px) {
   .Link_container button {
     width: 190px;
     height: 42px;
+  }
+  .swiper-imgs-container {
+    width: 35rem;
+    margin: 0 auto;
   }
 }
 @media screen and (max-width: 800px) {

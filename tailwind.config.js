@@ -23,7 +23,7 @@ module.exports = {
         sm: "358px",
       },
       width: {
-        560: "35rem",
+        560: "32rem",
         660: "42rem",
       },
     },

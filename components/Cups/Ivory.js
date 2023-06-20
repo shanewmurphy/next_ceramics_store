@@ -1,7 +1,7 @@
 import { useState } from "react";
 
 import IvoryImages from "./Galleries/Ivory-images";
-// import FAQDinnerware from "./FAQ";
+import FAQCups from "./FAQ-Cups";
 
 import { useCart } from "hooks/use-cart";
 
@@ -149,7 +149,9 @@ const Ivory = ({ loadNoir, loadRose, loadOlive }) => {
                   </li>
                 </ul>
               </div>
-              <div>{/* <FAQDinnerware /> */}</div>
+              <div>
+                <FAQCups />
+              </div>
             </div>
           </div>
         </div>
