@@ -30,6 +30,9 @@ export default function Home() {
       <div>
         <Crafted />
       </div>
+      <div>
+        <Link href="/Cups-Collection">Cups</Link>
+      </div>
       <div className="lg:w-2/3 md:w-10/12 sm:w-11/12 mx-auto mb-40">
         <h2 className="text-center font-bold text-text lg:text-5xl md:text-4xl sm:text-3xl antialiased">
           Bridging the gap between <i className="font-medium">makers</i> and
