@@ -14,6 +14,7 @@ const BestSellers_Data = [
     name: "Dinnerware Set",
     configuration: "16 Piece Set",
     price: "€199",
+    link: "/Dinnerware-Collection",
   },
   {
     id: "02",
@@ -21,6 +22,7 @@ const BestSellers_Data = [
     name: "Tableware Set",
     configuration: "36 Piece Set",
     price: "€300",
+    link: "/Dinnerware-Collection",
   },
   {
     id: "03",
@@ -28,6 +30,7 @@ const BestSellers_Data = [
     name: "Dinnerware Set",
     configuration: "12 Piece Set",
     price: "€179",
+    link: "/Dinnerware-Collection",
   },
   {
     id: "04",
@@ -35,13 +38,15 @@ const BestSellers_Data = [
     name: "Dinnerware Set",
     configuration: "12 Piece Set",
     price: "€199",
+    link: "/Plates-Collection",
   },
   {
     id: "05",
     image: "/imgs/BestSellers_imgs/Small_Plates_Olive_4_Piece_Set.jpg",
     name: "Small Plates",
     configuration: "4 Piece Set",
-    price: "€178",
+    price: "€78",
+    link: "/Plates-Collection",
   },
   {
     id: "06",
@@ -49,6 +54,7 @@ const BestSellers_Data = [
     name: "Bowls",
     configuration: "4 Piece Set",
     price: "€78",
+    link: "/Bowels-Collection",
   },
 ];
 
@@ -70,7 +76,7 @@ export default function BestSellers() {
             return (
               <SwiperSlide className="mt-16" key={BestSellers.id}>
                 <div>
-                  <Link href="#" className="Link_container">
+                  <Link href={BestSellers.link} className="Link_container">
                     <button className="btn lg:text-2xl font-semibold antialiased">
                       View
                     </button>

@@ -13,41 +13,47 @@ const BestSellers_Data = [
     name: "Dinnerware Set",
     configuration: "16 Piece Set",
     price: "€199",
+    link: "/Dinnerware-Collection",
   },
   {
     id: "02",
     image: "/imgs/BestSellers_imgs/Tableware_Set_White_36_Piece_Set.jpg",
     name: "Tableware Set",
     configuration: "36 Piece Set",
-    price: "€300",
+    price: "€199",
+    link: "/Dinnerware-Collection",
   },
   {
     id: "03",
     image: "/imgs/BestSellers_imgs/Dinnerware_Set_Olive_12_Piece_Set.jpg",
     name: "Dinnerware Set",
     configuration: "12 Piece Set",
-    price: "€179",
+    price: "€199",
+    link: "/Dinnerware-Collection",
   },
   {
     id: "04",
     image: "/imgs/BestSellers_imgs/Big_Plates_Black_4_Piece_Set.jpg",
     name: "Dinnerware Set",
     configuration: "12 Piece Set",
-    price: "€199",
+    price: "€79",
+    link: "/Plates-Collection",
   },
   {
     id: "05",
     image: "/imgs/BestSellers_imgs/Small_Plates_Olive_4_Piece_Set.jpg",
     name: "Small Plates",
     configuration: "4 Piece Set",
-    price: "€178",
+    price: "€79",
+    link: "/Plates-Collection",
   },
   {
     id: "06",
     image: "/imgs/BestSellers_imgs/Bowls_4_Piece_Set.jpg",
     name: "Bowls",
     configuration: "4 Piece Set",
-    price: "€78",
+    price: "€79",
+    link: "/Bowels-Collection",
   },
 ];
 export default function BestSellersMobile() {
@@ -69,7 +75,7 @@ export default function BestSellersMobile() {
             return (
               <SwiperSlide className="mt-16" key={BestSellers.id}>
                 <div>
-                  <Link href="#" className="Link_container">
+                  <Link href={BestSellers.link} className="Link_container">
                     <div className="relative">
                       <Image
                         src={BestSellers.image}

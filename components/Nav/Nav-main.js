@@ -107,53 +107,57 @@ export default function NavMain() {
                             <div className="mb-4 text-text font-semibold">
                               Your Cart Items ({totalItems})
                             </div>
-                            {data.map((item) => {
-                              return (
-                                <div key={item.title}>
-                                  <div className="flex flex-row gap-4 mb-4">
-                                    <div className="basis-1/3 text-center">
-                                      <Image
-                                        className="img_fill rounded-lg"
-                                        src={item.CartImageUrl}
-                                        width={100}
-                                        height={100}
-                                        alt="Product Cart Image"
-                                      />
-                                    </div>
-                                    <div className="basis-2/3">
-                                      <h4 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray align-top lg:mb-1 md:mb-1 sm:mb-1 antialiased">
-                                        {item.title}
-                                      </h4>
-                                      <h5 className="text-xs font-semibold text-gray mb-1 antialiased">
-                                        Colour: {item.colour}
-                                      </h5>
-                                      <h5 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray mb-1 antialiased">
-                                        €{item.price}
-                                      </h5>
-                                      <div className="flex justify-between">
-                                        <div>
-                                          <h5 className="text-sm text-gray mb-2 font-semibold antialiased">
-                                            Qty: {item.quantity}
-                                          </h5>
-                                        </div>
-                                        <div>
-                                          <h6 className="text-right text-sm font-semibold text-text antialiased">
-                                            <button
-                                              className="underline"
-                                              onClick={() =>
-                                                removeFromCart({ id: item.id })
-                                              }
-                                            >
-                                              Remove
-                                            </button>
-                                          </h6>
+                            <div className="overflow-y-auto h-2/3">
+                              {data.map((item) => {
+                                return (
+                                  <div key={item.title}>
+                                    <div className="flex flex-row gap-4 mb-4">
+                                      <div className="basis-1/3 text-center scroll-smooth">
+                                        <Image
+                                          className="img_fill rounded-lg"
+                                          src={item.CartImageUrl}
+                                          width={100}
+                                          height={100}
+                                          alt="Product Cart Image"
+                                        />
+                                      </div>
+                                      <div className="basis-2/3">
+                                        <h4 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray align-top lg:mb-1 md:mb-1 sm:mb-1 antialiased">
+                                          {item.title}
+                                        </h4>
+                                        <h5 className="text-xs font-semibold text-gray mb-1 antialiased">
+                                          Colour: {item.colour}
+                                        </h5>
+                                        <h5 className="lg:text-base md:text-base sm:text-sm font-semibold text-gray mb-1 antialiased">
+                                          €{item.price}
+                                        </h5>
+                                        <div className="flex justify-between">
+                                          <div>
+                                            <h5 className="text-sm text-gray mb-2 font-semibold antialiased">
+                                              Qty: {item.quantity}
+                                            </h5>
+                                          </div>
+                                          <div>
+                                            <h6 className="text-right text-sm font-semibold text-text antialiased">
+                                              <button
+                                                className="underline"
+                                                onClick={() =>
+                                                  removeFromCart({
+                                                    id: item.id,
+                                                  })
+                                                }
+                                              >
+                                                Remove
+                                              </button>
+                                            </h6>
+                                          </div>
                                         </div>
                                       </div>
                                     </div>
                                   </div>
-                                </div>
-                              );
-                            })}
+                                );
+                              })}
+                            </div>
                             <div className="flex flex-col lg:w-full md:w-80 sm:w-full mx-auto absolute bottom-0 mb-12">
                               <div className="flex justify-between mb-4">
                                 <div className="font-bold text-lg text-text antialiased">
