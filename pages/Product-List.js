@@ -24,6 +24,7 @@ export default function ProductList() {
                         src={product.productImgUrl}
                         width={500}
                         height={500}
+                        effect="blur"
                         alt={product.productName}
                       />
                     </div>

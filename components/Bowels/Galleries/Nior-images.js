@@ -39,6 +39,7 @@ export default function NiorImages() {
                 src={image.url}
                 width={2000}
                 height={2000}
+                effect="blur"
                 alt="Dinnerwear Set Nior"
                 priority
               />

@@ -8,6 +8,7 @@ export default function Hero() {
           src="/imgs/Hero_Large_Screen.jpg"
           width={1280}
           height={616}
+          effect="blur"
           alt="Hero image"
         />
       </div>

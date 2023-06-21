@@ -81,6 +81,7 @@ export default function BestSellersMobile() {
                         src={BestSellers.image}
                         width={600}
                         height={600}
+                        effect="blur"
                         alt="product"
                       />
                     </div>
