@@ -10,8 +10,8 @@ export default function ProductList() {
         <div>
           <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 w-11/12 mx-auto lg:mt-16 md:mt-8 sm:mt-6 gap-x-6 lg:gap-y-8 md:gap-y-4 sm:gap-y-1 mb-60">
             {Productlist.map((product) => (
-              <div>
-                <div key={product.id} className="mt-6">
+              <div key={product.id}>
+                <div className="mt-6">
                   <Link
                     href={product.PageLinkUrl}
                     className="Link_container_productPge"
