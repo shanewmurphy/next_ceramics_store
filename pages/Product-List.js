@@ -30,14 +30,14 @@ export default function ProductList() {
                     </div>
                   </Link>
                   <Link href={product.PageLinkUrl}>
-                    <h2 className="text-center font-bold text-text lg:text-lg md:text-lg sm:text-sm mt-2 mb-1 antialiased">
+                    <h2 className="text-center font-bold text-text lg:text-xl md:text-lg sm:text-sm mt-2 antialiased">
                       {product.productName}
                     </h2>
                   </Link>
-                  <p className="text-center text-text lg:font-medium sm:font-normal lg:text-sm md:text-sm sm:text-xs">
+                  <p className="text-center text-text font-semibold sm:font-normal lg:text-lg md:text-sm sm:text-xs">
                     €{product.price}
                   </p>
-                  <div className="text-center">Colours</div>
+                  <div className="text-center text-text lg:text-sm md:text-sm sm:text-xs"></div>
                 </div>
               </div>
             ))}
