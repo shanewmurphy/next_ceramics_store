@@ -24,6 +24,9 @@ export default function Home() {
         <Hero />
       </div>
       <div>
+        <Link href="/Product-List">Products Page</Link>
+      </div>
+      <div>
         <BestSellers />
         <BestSellersMobile />
       </div>

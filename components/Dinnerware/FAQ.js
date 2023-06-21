@@ -74,9 +74,6 @@ export default function FAQDinnerware() {
                     <ul className="list-disc list-outside pl-6">
                       <li>Delivery in 3-5 business days.</li>
                       <li>
-                        Small Plate : ∅ 19 CM / 7.4 in ; Height: 2 CM / 0.7 in
-                      </li>
-                      <li>
                         Standard shipping: €10 EUR (Free on orders above €70
                         EUR)
                       </li>
