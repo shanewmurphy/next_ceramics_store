@@ -17,17 +17,25 @@ export default function FAQBowels() {
                       } h-5 w-5 text-text`}
                     />
                   </Disclosure.Button>
-                  <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
-                    <h6>Dinnerware:</h6>
-                    <ul className="list-disc list-outside pl-6">
-                      <li>Vertical rims prevent spills & allow for stacking</li>
-                      <li>Semi-matte reactive glaze finish</li>
-                      <li>
+                  <Disclosure.Panel className="px-2 pt-1 pb-2 text-text antialiased">
+                    <h6 className="mb-2">Dinnerware:</h6>
+                    <ul className="list-disc text-text text-xs list-outside pl-6">
+                      <li className="text-sm">
+                        Vertical rims prevent spills & allow for stacking
+                      </li>
+                      <li className="text-sm">
+                        Semi-matte reactive glaze finish
+                      </li>
+                      <li className="text-sm">
                         100% microwave, dishwasher safe, oven safe up to 220°C
                         /430°F
                       </li>
-                      <li>Artisan crafted in a family-owned factory</li>
-                      <li>Locally sourced & recycled clay</li>
+                      <li className="text-sm">
+                        Artisan crafted in a family-owned factory
+                      </li>
+                      <li className="text-sm">
+                        Locally sourced & recycled clay
+                      </li>
                     </ul>
                   </Disclosure.Panel>
                 </>
@@ -45,9 +53,9 @@ export default function FAQBowels() {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
-                    <ul className="list-disc list-outside pl-6">
-                      <li>∅ 13 CM / 7.1 in</li>
-                      <li>H: 7 CM / 2.7 in</li>
+                    <ul className="list-disc text-text list-outside pl-6">
+                      <li className="text-sm">∅ 13 CM / 7.1 in</li>
+                      <li className="text-sm">H: 7 CM / 2.7 in</li>
                     </ul>
                   </Disclosure.Panel>
                 </>
@@ -65,14 +73,20 @@ export default function FAQBowels() {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
-                    <ul className="list-disc list-outside pl-6">
-                      <li>Delivery in 3-5 business days.</li>
-                      <li>
+                    <ul className="list-disc text-text list-outside pl-6">
+                      <li className="text-sm">
+                        Delivery in 3-5 business days.
+                      </li>
+                      <li className="text-sm">
                         Standard shipping: €10 EUR (Free on orders above €70
                         EUR)
                       </li>
-                      <li>30 day return & exchange window</li>
-                      <li>Defects are replaced free of charge</li>
+                      <li className="text-sm">
+                        30 day return & exchange window
+                      </li>
+                      <li className="text-sm">
+                        Defects are replaced free of charge
+                      </li>
                     </ul>
                   </Disclosure.Panel>
                 </>
@@ -90,10 +104,14 @@ export default function FAQBowels() {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
-                    <ul className="list-disc list-outside pl-6">
-                      <li>1 tree planted every €50 spent.</li>
-                      <li>100% recyclable packaging.</li>
-                      <li>Locally sourced & recycled clay.</li>
+                    <ul className="list-disc text-text list-outside pl-6">
+                      <li className="text-sm">
+                        1 tree planted every €50 spent.
+                      </li>
+                      <li className="text-sm">100% recyclable packaging.</li>
+                      <li className="text-sm">
+                        Locally sourced & recycled clay.
+                      </li>
                     </ul>
                   </Disclosure.Panel>
                 </>

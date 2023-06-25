@@ -18,7 +18,7 @@ module.exports = {
         text: "#484B5A",
         bgFaq: "#ebe3de",
         Nav: "#60675E",
-        green: "#4D5C57",
+        green: "#828b82",
       },
       screens: {
         sm: "358px",

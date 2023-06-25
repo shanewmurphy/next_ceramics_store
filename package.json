@@ -12,6 +12,7 @@
     "@headlessui/react": "^1.7.14",
     "@heroicons/react": "^2.0.18",
     "@next/font": "^13.4.3",
+    "@nextui-org/react": "^1.0.0-beta.13",
     "@stripe/stripe-js": "^1.54.0",
     "classnames": "^2.3.2",
     "eslint": "8.41.0",

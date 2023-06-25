@@ -19,15 +19,23 @@ export default function FAQCups() {
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
                     <h6>Dinnerware:</h6>
-                    <ul className="list-disc list-outside pl-6">
-                      <li>Vertical rims prevent spills & allow for stacking</li>
-                      <li>Semi-matte reactive glaze finish</li>
-                      <li>
+                    <ul className="list-disc text-text list-outside pl-6">
+                      <li className="text-xs">
+                        Vertical rims prevent spills & allow for stacking
+                      </li>
+                      <li className="text-xs">
+                        Semi-matte reactive glaze finish
+                      </li>
+                      <li className="text-xs">
                         100% microwave, dishwasher safe, oven safe up to 220°C
                         /430°F
                       </li>
-                      <li>Artisan crafted in a family-owned factory</li>
-                      <li>Locally sourced & recycled clay</li>
+                      <li className="text-xs">
+                        Artisan crafted in a family-owned factory
+                      </li>
+                      <li className="text-xs">
+                        Locally sourced & recycled clay
+                      </li>
                     </ul>
                   </Disclosure.Panel>
                 </>
@@ -45,9 +53,9 @@ export default function FAQCups() {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
-                    <ul className="list-disc list-outside pl-6">
-                      <li>∅ 8.5 CM / 3.3 in</li>
-                      <li>H: 10 CM / 3.9 in</li>
+                    <ul className="list-disc text-text list-outside pl-6">
+                      <li className="text-xs">∅ 8.5 CM / 3.3 in</li>
+                      <li className="text-xs">H: 10 CM / 3.9 in</li>
                     </ul>
                   </Disclosure.Panel>
                 </>
@@ -65,14 +73,20 @@ export default function FAQCups() {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
-                    <ul className="list-disc list-outside pl-6">
-                      <li>Delivery in 3-5 business days.</li>
-                      <li>
+                    <ul className="list-disc text-text list-outside pl-6">
+                      <li className="text-xs">
+                        Delivery in 3-5 business days.
+                      </li>
+                      <li className="text-xs">
                         Standard shipping: €10 EUR (Free on orders above €70
                         EUR)
                       </li>
-                      <li>30 day return & exchange window</li>
-                      <li>Defects are replaced free of charge</li>
+                      <li className="text-xs">
+                        30 day return & exchange window
+                      </li>
+                      <li className="text-xs">
+                        Defects are replaced free of charge
+                      </li>
                     </ul>
                   </Disclosure.Panel>
                 </>
@@ -90,10 +104,14 @@ export default function FAQCups() {
                     />
                   </Disclosure.Button>
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
-                    <ul className="list-disc list-outside pl-6">
-                      <li>1 tree planted every €50 spent.</li>
-                      <li>100% recyclable packaging.</li>
-                      <li>Locally sourced & recycled clay.</li>
+                    <ul className="list-disc text-text list-outside pl-6">
+                      <li className="text-xs">
+                        1 tree planted every €50 spent.
+                      </li>
+                      <li className="text-xs">100% recyclable packaging.</li>
+                      <li className="text-xs">
+                        Locally sourced & recycled clay.
+                      </li>
                     </ul>
                   </Disclosure.Panel>
                 </>

@@ -1,6 +1,6 @@
 import Head from "next/head";
-import NavMain from "../Nav/Nav-main";
-import NavMobile from "../Nav/Nav-mobile";
+
+import Nav from "../Nav/Nav";
 export default function Layout({ title, keywords, description, children }) {
   return (
     <div>
@@ -10,12 +10,10 @@ export default function Layout({ title, keywords, description, children }) {
           <meta name="description" content={description} />
           <meta name="keywords" content={keywords} />
         </Head>
-        <div className="lg:block md:block sm:hidden">
-          <NavMain />
+        <div>
+          <Nav />
         </div>
-        <div className="lg:hidden md:hidden sm:block">
-          <NavMobile />
-        </div>
+
         <div>{children}</div>
       </div>
     </div>

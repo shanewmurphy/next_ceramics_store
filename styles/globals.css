@@ -8,6 +8,48 @@ body {
   margin: 0;
   background-color: #e6dcd5;
 }
+img {
+  margin: 0;
+}
+.nextui-navbar-container {
+  background-color: #e6dcd5 !important;
+}
+.nextui-navbar-toggle-icon {
+  margin-top: 12px !important;
+  margin-left: 20px !important;
+}
+
+.nextui-navbar-toggle-icon span {
+  background-color: #c98769 !important;
+}
+.nextui-navbar-toggle-icon > .line {
+  width: 35px !important;
+  height: 2px !important;
+}
+
+.nextui-navbar-toggle-icon::after {
+  position: absolute;
+  content: "Menu";
+  left: 80px;
+  top: 30px;
+  color: #c98769;
+}
+
+.nextui-navbar-collapse-wrapper {
+  background-color: #e6dad1 !important;
+}
+.next-dropdown {
+  position: relative;
+}
+.nextui-dropdown-button button {
+  width: 12px !important;
+}
+.next-dropdown.opened > .next-dropdown-menu {
+  display: block;
+}
+.nextui-navbar-collapse-wrapper {
+  height: 100vh !important;
+}
 .full-width {
   width: 100vw;
   margin: 0 auto;
@@ -155,19 +197,6 @@ body {
 .swiper-slide {
   width: 100%;
   background-color: #e6dcd5;
-}
-.custom-loader {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  background: conic-gradient(#0000 10%, #c98769);
-  -webkit-mask: radial-gradient(farthest-side, #0000 calc(100% - 8px), #000 0);
-  animation: s3 1s infinite linear;
-}
-@keyframes s3 {
-  to {
-    transform: rotate(1turn);
-  }
 }
 
 @media screen and (max-width: 900px) {
