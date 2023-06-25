@@ -33,8 +33,8 @@ const myDarkTheme = createTheme({
 function MyApp({ Component, pageProps }) {
   const cart = useCartState();
   return (
-    <CartContext.Provider value={cart}>
-      <NextUIProvider theme={myDarkTheme}>
+    <NextUIProvider theme={myDarkTheme}>
+      <CartContext.Provider value={cart}>
         <main className={`${inter.variable} font-sans`}>
           <div>
             <ShippingNote />
@@ -42,8 +42,8 @@ function MyApp({ Component, pageProps }) {
           <Component {...pageProps} />
         </main>
         <Footer />
-      </NextUIProvider>
-    </CartContext.Provider>
+      </CartContext.Provider>
+    </NextUIProvider>
   );
 }
 

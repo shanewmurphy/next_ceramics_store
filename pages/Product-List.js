@@ -1,10 +1,10 @@
 import Image from "next/image";
 import Link from "next/link";
 import Productlist from "@/Data/Productlist";
-
+import Layout from "@/components/Layout/Layout";
 export default function ProductList() {
   return (
-    <div>
+    <Layout>
       <div>
         <div></div>
         <div>
@@ -44,6 +44,6 @@ export default function ProductList() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

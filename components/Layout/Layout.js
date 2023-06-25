@@ -1,6 +1,6 @@
 import Head from "next/head";
-
 import Nav from "../Nav/Nav";
+
 export default function Layout({ title, keywords, description, children }) {
   return (
     <div>

@@ -1,7 +1,8 @@
 import Image from "next/image";
+import Layout from "@/components/Layout/Layout";
 export default function OurStory() {
   return (
-    <div>
+    <Layout>
       <div className="w-11/12 mx-auto">
         <div className="lg:w-3/4 mx-auto lg:mt-16 md:mt-16 sm:mt-16">
           <h2 className="lg:text-5xl md:text-5xl sm:text-xl text-center font-bold text-text mb-16 antialiased">
@@ -72,6 +73,6 @@ export default function OurStory() {
           </div>
         </div>
       </div>
-    </div>
+    </Layout>
   );
 }

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Navbar, Text, Dropdown } from "@nextui-org/react";
+import { Navbar, Dropdown } from "@nextui-org/react";
 import Cart from "./Cart";
 
 export default function Nav() {
@@ -9,7 +9,11 @@ export default function Nav() {
       URL: "/Bowels-Collection",
     },
     {
-      PageTitle: "Customers",
+      PageTitle: "Dinnerware Sets",
+      URL: "/Dinnerware-Collection",
+    },
+    {
+      PageTitle: "Bowels",
       URL: "/Bowels-Collection",
     },
     {
@@ -30,7 +34,9 @@ export default function Nav() {
         >
           <Navbar.Content hideIn="xs" className="ml-10">
             <Link className="text-text" href="/Bowels-Collection">
-              <Navbar.Brand>LOGO</Navbar.Brand>
+              <Navbar.Brand>
+                <Link href="/">LOGO</Link>
+              </Navbar.Brand>
             </Link>
             <Navbar.Link href="#" className="text-text text-2xl">
               <Dropdown placement="bottom-left">
@@ -71,7 +77,7 @@ export default function Nav() {
             <Navbar.Brand className="lg:hidden md:hidden sm:block">
               LOGO
             </Navbar.Brand>
-            <Navbar.Item className="mr-6">
+            <Navbar.Item className="lg:mr-6">
               <Cart />
             </Navbar.Item>
           </Navbar.Content>

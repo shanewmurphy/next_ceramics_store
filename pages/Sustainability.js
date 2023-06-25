@@ -1,8 +1,8 @@
 import Image from "next/image";
-
+import Layout from "@/components/Layout/Layout";
 export default function Sustainability() {
   return (
-    <div>
+    <Layout>
       <div></div>
       <div className="flex w-11/12 mx-auto lg:mt-40 md:mt-40 sm:mt-20 sm:mb-8 antialiased">
         <div>
@@ -94,6 +94,6 @@ export default function Sustainability() {
         </div>
       </div>
       <div className="mb-40"></div>
-    </div>
+    </Layout>
   );
 }
