@@ -28,13 +28,13 @@ export default function Cart() {
   const [open, setOpen] = useState(false);
   return (
     <div>
-      <div className="flex w-14 mt-4 justify-end z-40">
-        <div className="w-16">
+      <div className="flex w-14 relative justify-end z-40">
+        <div className="w-10">
           <ShoppingBagIcon
             className="h-8 w-8 text-neutral-600 hover:text-neutral-500 cursor-pointer relative"
             onClick={() => setOpen(true)}
           />
-          <span className="absolute top-3 left-6 rounded-full text-sm bg-button text-white text-center align-middle w-6 h-6">
+          <span className="absolute top-0 left-10 rounded-full text-sm bg-button text-white text-center align-middle w-6 h-6">
             {totalItems}
           </span>
         </div>

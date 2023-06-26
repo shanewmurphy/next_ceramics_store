@@ -17,8 +17,8 @@ module.exports = {
         bg_button: "#f4f1eb",
         text: "#484B5A",
         bgFaq: "#ebe3de",
-        Nav: "#60675E",
         green: "#828b82",
+        navBg: "#ebe3de",
       },
       screens: {
         sm: "358px",

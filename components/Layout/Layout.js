@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Nav from "../Nav/Nav";
+
+import NavMain from "../Nav/Nav-main";
 
 export default function Layout({ title, keywords, description, children }) {
   return (
@@ -11,7 +12,7 @@ export default function Layout({ title, keywords, description, children }) {
           <meta name="keywords" content={keywords} />
         </Head>
         <div>
-          <Nav />
+          <NavMain />
         </div>
 
         <div>{children}</div>
