@@ -1,7 +1,10 @@
 import Image from "next/image";
+import Link from "next/link";
 
 import Cart from "./Cart";
 import NavMobile from "./Nav-Menu";
+import DropdownMenu from "./Dropdown";
+
 export default function NavMain() {
   return (
     <div>
@@ -15,13 +18,15 @@ export default function NavMain() {
               <div>
                 <nav>
                   <ul className="inline-flex">
-                    <li>Shop</li>
+                    <li className="">
+                      <DropdownMenu />
+                    </li>
                     <li className="pl-4">About</li>
                     <li className="pl-4">Sustainability</li>
                   </ul>
                 </nav>
               </div>
-              <div>BB</div>
+              <Link href="/">LOGO</Link>
               <div>
                 <Cart />
               </div>
@@ -34,11 +39,13 @@ export default function NavMain() {
           <div className="w-full text-center bg-sand py-2 text-xs antialiased">
             Free shipping orders over €70
           </div>
-          <div className="flex justify-between items-center bg-navBg h-12 px-4">
+          <div className="flex justify-between items-center bg-navBg h-12 px-6">
             <div>
               <NavMobile />
             </div>
-            <div>LOGO</div>
+            <div>
+              <Link href="/">LOGO</Link>
+            </div>
             <div>
               <Cart />
             </div>
