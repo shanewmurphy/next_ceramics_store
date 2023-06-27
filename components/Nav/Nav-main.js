@@ -10,8 +10,10 @@ export default function NavMain() {
   return (
     <div>
       <div className="w-full fixed top-0 z-10 lg:block md:block sm:hidden">
-        <div className="w-full bg-sand text-text text-sm py-2 text-center font-medium antialiased">
-          Free shipping orders over €70
+        <div className="w-full bg-sand  py-2 text-center">
+          <h4 className="font-bold text-text text-sm antialiased">
+            Free shipping orders over €70
+          </h4>
         </div>
         <div>
           <div className="w-full bg-navBg">

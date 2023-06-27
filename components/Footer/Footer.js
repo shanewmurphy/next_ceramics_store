@@ -26,7 +26,7 @@ export default function Footer() {
                   </li>
                   <li>
                     <Link href="#" className="hover:text-text">
-                      Dinnerware
+                      Dinnerware Sets
                     </Link>
                   </li>
                   <li>
@@ -63,15 +63,15 @@ export default function Footer() {
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full justify-between px-2 py-2 text-left text-sm font-medium text-white focus:outline-none">
-                          <span className="text-xl antialiased">Shop</span>
+                        <Disclosure.Button className="flex w-full justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
+                          <span className="text-xl mb-1 antialiased">Shop</span>
                           <PlusIcon
                             className={`${
-                              open ? "rotate-80 transform" : ""
+                              open ? "rotate-45 transform" : ""
                             } h-5 w-5 text-white`}
                           />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        <Disclosure.Panel className="px-4 pb-4 text-sm text-gray-500">
                           <ul className="text-white font-noraml text-base antialiased">
                             <li>
                               <Link href="#" className="hover:text-text">
@@ -101,15 +101,15 @@ export default function Footer() {
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full justify-between px-2 py-2 text-left text-sm font-medium text-white focus:outline-none">
-                          <span className="text-xl antialiased">About</span>
+                        <Disclosure.Button className="flex w-full justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
+                          <span className="text-xl mb-1  antialiased">About</span>
                           <PlusIcon
                             className={`${
-                              open ? "rotate-180 transform" : ""
+                              open ? "rotate-45 transform" : ""
                             } h-5 w-5 text-white`}
                           />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        <Disclosure.Panel className="px-4 pb-4 text-sm text-gray-500">
                           <ul className="text-white font-noraml text-base antialiased">
                             <li>Our Story</li>
                             <li>Sustainability</li>
@@ -122,15 +122,15 @@ export default function Footer() {
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full justify-between px-2 py-2 text-left text-sm font-medium text-white focus:outline-none">
-                          <span className="text-xl antialiased">Help</span>
+                        <Disclosure.Button className="flex w-full justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
+                          <span className="text-xl mb-1  antialiased">Help</span>
                           <PlusIcon
                             className={`${
-                              open ? "rotate-180 transform" : ""
+                              open ? "rotate-45 transform" : ""
                             } h-5 w-5 text-white`}
                           />
                         </Disclosure.Button>
-                        <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        <Disclosure.Panel className="px-4 pb-4 text-sm text-gray-500">
                           <ul className="text-white font-noraml text-base antialiased">
                             <li>FAQ</li>
                             <li>Terms</li>
@@ -165,7 +165,9 @@ export default function Footer() {
               </li>
             </ul>
           </div>
-          <div>Made by Shane</div>
+          <div>
+            <p className="text-white text-xs pt-3">Made by Shane</p>
+          </div>
         </div>
       </div>
     </div>

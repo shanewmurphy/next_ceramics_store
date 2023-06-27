@@ -4,7 +4,7 @@ export default function OurStory() {
   return (
     <Layout>
       <div className="w-11/12 mx-auto">
-        <div className="lg:w-3/4 mx-auto lg:mt-16 md:mt-16 sm:mt-16">
+        <div className="lg:w-3/4 mx-auto lg:mt-56 md:mt-40 sm:mt-40">
           <h2 className="lg:text-5xl md:text-5xl sm:text-xl text-center font-bold text-text mb-16 antialiased">
             We are a group of <i className="font-semibold">adventurers</i> and
             <i className="font-semibold"> explorers,</i> tired of the current
@@ -22,7 +22,7 @@ export default function OurStory() {
             priority={true}
           />
         </div>
-        <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col mt-4 lg:mb-40 md:mb-24 sm:mb-8">
+        <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col mt-4 lg:mb-40 md:mb-24 sm:mb-24">
           <div className="basis-3/5">
             <Image
               src="/imgs/Our_Story_03-min.jpg"
@@ -33,10 +33,10 @@ export default function OurStory() {
             />
           </div>
           <div className="basis-2/5">
-            <h4 className="lg:text-4xl md:text-4xl sm:text-2xl text-text mt-2 lg:mb-2 md:mb-2 sm:mb-2 font-semibold lg:text-left md:text-center sm:text-center antialiased">
+            <h4 className="lg:text-4xl md:text-4xl sm:text-2xl font-bold text-text mt-2 lg:mb-2 md:mb-2 sm:mb-2 lg:text-left md:text-center sm:text-center antialiased">
               Our Mission
             </h4>
-            <h5 className="text-text lg:text-2xl">
+            <h5 className="text-text font-medium lg:text-xl md:text-2xl sm:text-sm antialiased">
               We bring quality artisanal goods from around the world, right to
               your doorstep. Always ethically sourced and sustainably crafted,
               each piece has a story - let’s explore them together.
@@ -45,18 +45,18 @@ export default function OurStory() {
         </div>
         <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col mt-4 mb-40 antialiased">
           <div className="basis-7/12">
-            <h3 className="text-text font-bold lg:text-4xl mb-6">
+            <h3 className="text-text font-bold lg:text-4xl md:text-4xl sm:text-xl mb-6">
               In a world of fast production at massive scales, we&apos;re found
               themselves struggling to find high-quality products at affordable
               prices.
             </h3>
-            <p className="text-text font-medium text-base mb-2">
+            <p className="text-text font-medium lg:text-base md:text-base sm:text-sm mb-2">
               As avid travelers, a recent visit to a ceramics artisan in Ireland
               sparked something within them. Why must they travel across the
               globe to find high-quality goods that they cherished and enjoyed
               using?
             </p>
-            <p className="text-text font-medium text-base lg:mb-2 md:mb-6 sm:mb-12">
+            <p className="text-text font-medium lg:text-base md:text-base sm:text-sm lg:mb-2 md:mb-6 sm:mb-12 sm:mt-6">
               An answer to the environmental issues and wasteful consumerism
               created by globalization and production at massive scales.
             </p>

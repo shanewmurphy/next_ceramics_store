@@ -82,7 +82,7 @@ export default function NavMobile() {
                                 Dinnerware Sets
                               </Link>
                             </li>
-                            <li className="mt-2">
+                            <li className="mt-3">
                               <Link
                                 href="/Plates-Collection"
                                 className="hover:text-button"
@@ -90,7 +90,7 @@ export default function NavMobile() {
                                 Big Plates
                               </Link>
                             </li>
-                            <li className="mt-2">
+                            <li className="mt-3">
                               <Link
                                 href="/Bowels-Collection"
                                 className="hover:text-button"
@@ -98,7 +98,7 @@ export default function NavMobile() {
                                 Bowels
                               </Link>
                             </li>
-                            <li className="mt-2 mb-4">
+                            <li className="mt-3 mb-6">
                               <Link
                                 href="/Cups-Collection"
                                 className="hover:text-button"
@@ -115,21 +115,24 @@ export default function NavMobile() {
                           </h4>
                           <ul className="ml-2 mt-2 font-medium text-base text-text antialiased">
                             <li>
-                              <Link href="/" className="hover:text-button">
+                              <Link
+                                href="/Our-Story"
+                                className="hover:text-button"
+                              >
                                 Our Story
                               </Link>
                             </li>
-                            <li className="mt-2">
+                            <li className="mt-3">
                               <Link href="/" className="hover:text-button">
                                 Sustainability
                               </Link>
                             </li>
-                            <li className="mt-2">
+                            <li className="mt-3">
                               <Link href="/" className="hover:text-button">
                                 FAQ
                               </Link>
                             </li>
-                            <li className="mt-2">
+                            <li className="mt-3">
                               <Link href="/" className="hover:text-button">
                                 Contact Us
                               </Link>
