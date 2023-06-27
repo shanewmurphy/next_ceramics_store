@@ -40,7 +40,7 @@ export default function NavMobile() {
                   leaveFrom="-translate-x-0"
                   leaveTo="-translate-x-full"
                 >
-                  <Dialog.Panel className="pointer-events-auto relative w-screen max-w-md">
+                  <Dialog.Panel className="pointer-events-auto relative w-72 max-w-md">
                     <Transition.Child
                       as={Fragment}
                       enter="ease-in-out duration-500"
@@ -53,15 +53,15 @@ export default function NavMobile() {
                       <div className="absolute right-0 top-0 -ml-8 flex pr-2 pt-4 sm:-ml-10 sm:pr-4">
                         <button
                           type="button"
-                          className="rounded-md text-gray-300 hover:text-white focus:outline-none focus:ring-2 focus:ring-white"
+                          className="rounded-md text-gray-300 hover:text-text"
                           onClick={() => setOpen(false)}
                         >
                           <span className="sr-only">Close panel</span>
-                          <XMarkIcon className="h-6 w-6" aria-hidden="true" />
+                          <XMarkIcon className="h-7 w-7" aria-hidden="true" />
                         </button>
                       </div>
                     </Transition.Child>
-                    <div className="flex h-full flex-col overflow-y-scroll bg-white py-6 shadow-xl">
+                    <div className="flex h-full flex-col overflow-y-scroll bg-background py-6 shadow-xl">
                       <div className="px-4 sm:px-6">
                         <Dialog.Title className="text-base font-semibold leading-6 text-gray-900">
                           Panel title

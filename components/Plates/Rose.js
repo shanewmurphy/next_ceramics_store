@@ -29,7 +29,7 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
 
   return (
     <div>
-      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto lg:mt-32 md:mt20 sm:mt-24 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
+      <div className="flex lg:w-11/12 md:w-11/12 sm:w-11/12 lg:flex-row md:flex-col sm:flex-col mx-auto lg:mt-40 md:mt20 sm:mt-32 mb-40 lg:gap-12 md:gap-6 sm:gap-4">
         <div className="lg:w-6/12">
           <div className="lg:w-560 mx-auto lg:mb-6 md:mb-0">
             <div>

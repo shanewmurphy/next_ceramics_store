@@ -4,12 +4,13 @@ import Link from "next/link";
 import Cart from "./Cart";
 import NavMobile from "./Nav-Menu";
 import DropdownMenu from "./Dropdown";
+import DropdownAbout from "./Dropdown-about";
 
 export default function NavMain() {
   return (
     <div>
       <div className="w-full fixed top-0 z-10 lg:block md:block sm:hidden">
-        <div className="w-full bg-sand text-sm py-2 text-center antialiased">
+        <div className="w-full bg-sand text-text text-sm py-2 text-center font-medium antialiased">
           Free shipping orders over €70
         </div>
         <div>
@@ -18,11 +19,15 @@ export default function NavMain() {
               <div>
                 <nav>
                   <ul className="inline-flex">
-                    <li className="">
+                    <li>
                       <DropdownMenu />
                     </li>
-                    <li className="pl-4">About</li>
-                    <li className="pl-4">Sustainability</li>
+                    <li>
+                      <DropdownAbout />
+                    </li>
+                    <li className="pl-4 pt-2">
+                      <Link href="/">Sustainability</Link>
+                    </li>
                   </ul>
                 </nav>
               </div>

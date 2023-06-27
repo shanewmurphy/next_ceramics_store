@@ -3,13 +3,13 @@ import { Fragment, useEffect, useRef, useState } from "react";
 import { ChevronDownIcon } from "@heroicons/react/20/solid";
 import Link from "next/link";
 
-export default function ShopDropdown() {
+export default function AboutDropdown() {
   return (
     <div className="text-right">
       <Menu as="div" className="relative inline-block text-left">
         <div>
-          <Menu.Button className="inline-flex justify-center px-4 py-2 text-base font-medium text-text hover:bg-opacity-30 focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
-            Shop
+          <Menu.Button className="inline-flex justify-center px-4 py-2 text-base font-medium text-text focus:outline-none focus-visible:ring-2 focus-visible:ring-white focus-visible:ring-opacity-75">
+            About
             <ChevronDownIcon
               className="-mr-2 mt-1 h-5 w-5 text-text"
               aria-hidden="true"
@@ -29,22 +29,17 @@ export default function ShopDropdown() {
             <div className="px-2 py-2">
               <Menu.Item>
                 <button className="group flex w-full items-center mb-2 rounded-md px-2 py-2 text-text font-semibold text-base hover:bg-background antialiased">
-                  <Link href="/Dinnerware-Collection">Dinnerware Sets</Link>
+                  <Link href="/Our-Story">Our Story</Link>
                 </button>
               </Menu.Item>
               <Menu.Item>
                 <button className="group flex w-full items-center mb-2 rounded-md px-2 py-2 text-text font-semibold text-base hover:bg-background  antialiased">
-                  <Link href="/Bowels-Collection">Bowels</Link>
+                  <Link href="/Bowels-Collection">FAQs</Link>
                 </button>
               </Menu.Item>
               <Menu.Item>
                 <button className="group flex w-full items-center mb-2 rounded-md px-2 py-2 text-text font-semibold text-base hover:bg-background  antialiased">
-                  <Link href="/Plates-Collection">Big Plates</Link>
-                </button>
-              </Menu.Item>
-              <Menu.Item>
-                <button className="group flex w-full items-center mb-2 rounded-md px-2 py-2 text-text font-semibold text-base hover:bg-background  antialiased">
-                  <Link href="/Cups-Collection">Cups</Link>
+                  <Link href="/Plates-Collection">Contact Us</Link>
                 </button>
               </Menu.Item>
             </div>
