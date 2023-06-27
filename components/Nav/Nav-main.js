@@ -28,7 +28,7 @@ export default function NavMain() {
                       <DropdownAbout />
                     </li>
                     <li className="pl-4 pt-2">
-                      <Link href="/">Sustainability</Link>
+                      <Link href="/Sustainability">Sustainability</Link>
                     </li>
                   </ul>
                 </nav>

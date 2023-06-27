@@ -123,7 +123,10 @@ export default function NavMobile() {
                               </Link>
                             </li>
                             <li className="mt-3">
-                              <Link href="/" className="hover:text-button">
+                              <Link
+                                href="/Sustainability"
+                                className="hover:text-button"
+                              >
                                 Sustainability
                               </Link>
                             </li>

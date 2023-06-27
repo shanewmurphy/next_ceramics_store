@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { Disclosure } from "@headlessui/react";
-import { ChevronUpIcon } from "@heroicons/react/20/solid";
+
 import { PlusIcon } from "@heroicons/react/20/solid";
 export default function Footer() {
   return (
@@ -57,39 +57,51 @@ export default function Footer() {
                 </ul>
               </div>
             </div>
-            <div className="lg:hidden md:hidden sm:flex mb-20">
+            <div className="lg:hidden md:hidden sm:flex mb-4">
               <div className="w-full mx-auto">
                 <div>
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
-                          <span className="text-xl mb-1 antialiased">Shop</span>
+                        <Disclosure.Button className="flex w-full mt-4 justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
+                          <span className="text-base antialiased">Shop</span>
                           <PlusIcon
                             className={`${
                               open ? "rotate-45 transform" : ""
-                            } h-5 w-5 text-white`}
+                            } h-5 w-5 mt-2 text-white`}
                           />
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 pb-4 text-sm text-gray-500">
                           <ul className="text-white font-noraml text-base antialiased">
-                            <li>
-                              <Link href="#" className="hover:text-text">
+                            <li className="mb-2">
+                              <Link
+                                href="#"
+                                className="hover:text-text text-sm"
+                              >
                                 Ceramics
                               </Link>
                             </li>
-                            <li>
-                              <Link href="#" className="hover:text-text">
+                            <li className="mb-2">
+                              <Link
+                                href="#"
+                                className="hover:text-text text-sm"
+                              >
                                 Dinnerware
                               </Link>
                             </li>
-                            <li>
-                              <Link href="#" className="hover:text-text">
+                            <li className="mb-2">
+                              <Link
+                                href="#"
+                                className="hover:text-text text-sm"
+                              >
                                 Plates
                               </Link>
                             </li>
-                            <li>
-                              <Link href="#" className="hover:text-text">
+                            <li className="mb-2">
+                              <Link
+                                href="#"
+                                className="hover:text-text text-sm"
+                              >
                                 Bowels
                               </Link>
                             </li>
@@ -98,47 +110,85 @@ export default function Footer() {
                       </>
                     )}
                   </Disclosure>
+                  <div className="border-b-2 border-white/20 mt-2"></div>
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
-                          <span className="text-xl mb-1  antialiased">About</span>
+                        <Disclosure.Button className="flex w-full mt-4 justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
+                          <span className="text-base antialiased">About</span>
                           <PlusIcon
                             className={`${
                               open ? "rotate-45 transform" : ""
-                            } h-5 w-5 text-white`}
+                            } h-5 w-5 mt-1 text-white`}
                           />
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 pb-4 text-sm text-gray-500">
                           <ul className="text-white font-noraml text-base antialiased">
-                            <li>Our Story</li>
-                            <li>Sustainability</li>
-                            <li>Contact Us</li>
+                            <li className="mb-2">
+                              <Link
+                                href="/"
+                                className="hover:text-text text-sm"
+                              >
+                                Our Story
+                              </Link>
+                            </li>
+                            <li className="mb-2">
+                              <Link
+                                href="/"
+                                className="hover:text-text text-sm"
+                              >
+                                Sustainability
+                              </Link>
+                            </li>
+                            <li>
+                              <Link
+                                href="/"
+                                className="hover:text-text text-sm"
+                              >
+                                Contact Us
+                              </Link>
+                            </li>
                           </ul>
                         </Disclosure.Panel>
                       </>
                     )}
                   </Disclosure>
+                  <div className="border-b-2 border-white/20 mt-2"></div>
                   <Disclosure>
                     {({ open }) => (
                       <>
-                        <Disclosure.Button className="flex w-full justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
-                          <span className="text-xl mb-1  antialiased">Help</span>
+                        <Disclosure.Button className="flex w-full mt-4 justify-between pb-2 text-left text-sm font-medium text-white focus:outline-none">
+                          <span className="text-base antialiased">Help</span>
                           <PlusIcon
                             className={`${
                               open ? "rotate-45 transform" : ""
-                            } h-5 w-5 text-white`}
+                            } h-5 w-5 mt-1 text-white`}
                           />
                         </Disclosure.Button>
                         <Disclosure.Panel className="px-4 pb-4 text-sm text-gray-500">
                           <ul className="text-white font-noraml text-base antialiased">
-                            <li>FAQ</li>
-                            <li>Terms</li>
+                            <li className="mb-2">
+                              <Link
+                                href="/"
+                                className="hover:text-text text-sm"
+                              >
+                                FAQ
+                              </Link>
+                            </li>
+                            <li className="mb-2">
+                              <Link
+                                href="/"
+                                className="hover:text-text text-sm"
+                              >
+                                Terms
+                              </Link>
+                            </li>
                           </ul>
                         </Disclosure.Panel>
                       </>
                     )}
                   </Disclosure>
+                  <div className="border-b-2 border-white/20 mt-2"></div>
                 </div>
               </div>
             </div>

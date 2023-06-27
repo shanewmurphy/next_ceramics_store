@@ -4,7 +4,7 @@ export default function Sustainability() {
   return (
     <Layout>
       <div></div>
-      <div className="flex w-11/12 mx-auto lg:mt-40 md:mt-40 sm:mt-20 sm:mb-8 antialiased">
+      <div className="flex w-11/12 mx-auto lg:mt-52 md:mt-40 sm:mt-40 sm:mb-8 antialiased">
         <div>
           <h2 className="text-center text-text font-bold lg:text-5xl md:text-5xl sm:text-3xl mb-1">
             <i className="font-medium">Our</i> Sustainability Promise
@@ -25,7 +25,7 @@ export default function Sustainability() {
             alt="trees"
             effect="blur"
           />
-          <h4 className="text-text font-semibold sm:text-sm mt-4 lg:hidden md:hidden sm:block">
+          <h4 className="text-text font-medium text-base sm:text-sm mt-4 lg:hidden md:hidden sm:block">
             To combat this, we decided to partner with The Trillion Tree
             Campaign and contribute a portion of our sales to fund reforestation
             projects around the world, with the aim of reaching 1 trillion trees
@@ -61,23 +61,22 @@ export default function Sustainability() {
           />
         </div>
         <div className="basis-3/6 antialiased">
-          <h3 className="text-text font-semibold lg:text-4xl mb-2">
+          <h3 className="text-text font-semibold lg:text-4xl mb-2 sm:mt-4 antialiased">
             Repurposed Water Waste
           </h3>
-          <p className="text-text font-medium text-base lg:mb-2 md:mb-6 sm:mb-12">
+          <p className="text-text font-medium text-base lg:mb-2 md:mb-6 sm:mb-12 antialiased">
             In the ceramic making process, water is one of the key ingredients.
             To reduce unnecessary waste, excess water used in our production
-            process is filtered and repurposed for local farming and
-            agriculture.
+            process is filtered and repurposed for local farming and agriculture
           </p>
         </div>
       </div>
       <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col lg:mt-40 gap-12">
         <div className="basis-3/6">
-          <h3 className="text-text font-semibold lg:text-4xl mb-2">
+          <h3 className="text-text font-semibold lg:text-4xl mb-2 antialiased">
             Recycled Clay
           </h3>
-          <p className="text-text font-medium text-base lg:mb-2 md:mb-6 sm:mb-12">
+          <p className="text-text font-medium text-base lg:mb-2 md:mb-6 sm:mb-12 antialiased">
             To reduce our carbon footprint. Excess clay trimming and defective
             pieces in the production process are then recycled and reused to
             produce new pieces. No spare material is ever left behind.
