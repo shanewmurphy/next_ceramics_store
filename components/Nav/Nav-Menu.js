@@ -2,6 +2,7 @@ import { Fragment, useState } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import { XMarkIcon } from "@heroicons/react/24/outline";
 import { Bars2Icon } from "@heroicons/react/20/solid";
+import Link from "next/link";
 
 export default function NavMobile() {
   const [open, setOpen] = useState(false);
@@ -74,36 +75,36 @@ export default function NavMobile() {
                           </h4>
                           <ul className="ml-2 mt-2 font-medium text-base text-text antialiased">
                             <li>
-                              <a
+                              <Link
                                 href="/Dinnerware-Collection"
                                 className="hover:text-button"
                               >
                                 Dinnerware Sets
-                              </a>
+                              </Link>
                             </li>
                             <li className="mt-2">
-                              <a
+                              <Link
                                 href="/Plates-Collection"
                                 className="hover:text-button"
                               >
                                 Big Plates
-                              </a>
+                              </Link>
                             </li>
                             <li className="mt-2">
-                              <a
+                              <Link
                                 href="/Bowels-Collection"
                                 className="hover:text-button"
                               >
                                 Bowels
-                              </a>
+                              </Link>
                             </li>
                             <li className="mt-2 mb-4">
-                              <a
+                              <Link
                                 href="/Cups-Collection"
                                 className="hover:text-button"
                               >
                                 Cups
-                              </a>
+                              </Link>
                             </li>
                             <div className="divide-y"></div>
                           </ul>
@@ -114,24 +115,24 @@ export default function NavMobile() {
                           </h4>
                           <ul className="ml-2 mt-2 font-medium text-base text-text antialiased">
                             <li>
-                              <a href="/" className="hover:text-button">
+                              <Link href="/" className="hover:text-button">
                                 Our Story
-                              </a>
+                              </Link>
                             </li>
                             <li className="mt-2">
-                              <a href="/" className="hover:text-button">
+                              <Link href="/" className="hover:text-button">
                                 Sustainability
-                              </a>
+                              </Link>
                             </li>
                             <li className="mt-2">
-                              <a href="/" className="hover:text-button">
+                              <Link href="/" className="hover:text-button">
                                 FAQ
-                              </a>
+                              </Link>
                             </li>
                             <li className="mt-2">
-                              <a href="/" className="hover:text-button">
+                              <Link href="/" className="hover:text-button">
                                 Contact Us
-                              </a>
+                              </Link>
                             </li>
                           </ul>
                         </div>
