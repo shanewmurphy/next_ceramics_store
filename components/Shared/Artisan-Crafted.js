@@ -38,7 +38,7 @@ export default function ArtisanCrafted() {
             Our pieces are designed to be stacked and colors mixed and matched.
             Vertical rims prevent against accidental spills. Not just
             fashionable décor, this collection is made for heavy, frequent use -
-            it&apos; 100% microwave, dishwasher, and freezer to oven safe up to
+            its 100% microwave, dishwasher, and freezer to oven safe up to
             220C/430F. You'll never go back to cheap, generic dinnerware again.
           </p>
         </div>
