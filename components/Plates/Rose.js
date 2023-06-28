@@ -7,6 +7,9 @@ import products from "@/Data/products.json";
 
 import { useCart } from "hooks/use-cart";
 
+import KeyPoints from "../Shared/Key-Product-Points";
+import ArtisanCrafted from "../Shared/Artisan-Crafted";
+
 const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
   const [buttonText, setButtonText] = useState("Add to Cart");
   const { addToCart } = useCart();
@@ -158,6 +161,12 @@ const Rose = ({ loadNoir, loadIvory, loadOlive, loadRose }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div>
+        <KeyPoints />
+      </div>
+      <div>
+        <ArtisanCrafted />
       </div>
     </div>
   );

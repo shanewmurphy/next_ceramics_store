@@ -50,7 +50,7 @@ export default function Sustainability() {
           </h3>
         </div>
       </div>
-      <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col gap-12">
+      <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col lg:gap-12 md:gap-12 sm:gap-2">
         <div className="basis-3/6">
           <Image
             src="/imgs/water_recycling.jpg"
@@ -61,22 +61,22 @@ export default function Sustainability() {
           />
         </div>
         <div className="basis-3/6 antialiased">
-          <h3 className="text-text font-semibold lg:text-4xl mb-2 sm:mt-4 antialiased">
+          <h4 className="lg:text-4xl md:text-4xl sm:text-2xl font-bold text-text mt-2 lg:mb-2 md:mb-2 sm:mb-2 lg:text-left md:text-center sm:text-center antialiased">
             Repurposed Water Waste
-          </h3>
-          <p className="text-text font-medium text-base lg:mb-2 md:mb-6 sm:mb-12 antialiased">
+          </h4>
+          <p className="text-text font-medium lg:text-xl md:text-2xl sm:text-sm antialiased">
             In the ceramic making process, water is one of the key ingredients.
             To reduce unnecessary waste, excess water used in our production
             process is filtered and repurposed for local farming and agriculture
           </p>
         </div>
       </div>
-      <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col lg:mt-40 gap-12">
+      <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col lg:mt-40 md:mt-40 sm:mt-16 lg:gap-12 md:gap-12 sm:gap-6">
         <div className="basis-3/6">
-          <h3 className="text-text font-semibold lg:text-4xl mb-2 antialiased">
+          <h4 className="lg:text-4xl md:text-4xl sm:text-2xl font-bold text-text mt-2 sm:mt-8 lg:mb-2 md:mb-2 sm:mb-2 lg:text-left md:text-center sm:text-center antialiased">
             Recycled Clay
-          </h3>
-          <p className="text-text font-medium text-base lg:mb-2 md:mb-6 sm:mb-12 antialiased">
+          </h4>
+          <p className="text-text font-medium lg:text-xl md:text-2xl sm:text-sm antialiased">
             To reduce our carbon footprint. Excess clay trimming and defective
             pieces in the production process are then recycled and reused to
             produce new pieces. No spare material is ever left behind.

@@ -45,11 +45,11 @@ export default function OurStory() {
         </div>
         <div className="flex w-11/12 items-center mx-auto lg:flex-row md:flex-col sm:flex-col mt-4 mb-40 antialiased">
           <div className="basis-7/12">
-            <h3 className="text-text font-bold lg:text-4xl md:text-4xl sm:text-xl mb-6">
+            <h4 className="lg:text-4xl md:text-4xl sm:text-2xl font-bold text-text mt-2 lg:mb-4 md:mb-2 sm:mb-2 lg:text-left md:text-center sm:text-center antialiased">
               In a world of fast production at massive scales, we&apos;re found
               themselves struggling to find high-quality products at affordable
               prices.
-            </h3>
+            </h4>
             <p className="text-text font-medium lg:text-base md:text-base sm:text-sm mb-2">
               As avid travelers, a recent visit to a ceramics artisan in Ireland
               sparked something within them. Why must they travel across the
