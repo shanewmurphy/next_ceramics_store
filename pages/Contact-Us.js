@@ -9,10 +9,10 @@ export default function ContactUs() {
             Conatct Us
           </h2>
           <p className="text-text lg:text-base sm:text-sm lg:w-9/12 sm:w-full">
-            We're here if you need us! We love to talk shop. Please get in touch
-            with any questions or concerns. We aim to reply within a day during
-            working hours. Our working hours are Monday to Friday, 9am-6pm CET.
-            Look forward to hearing from you!
+            We&apos;re here if you need us! We love to talk shop. Please get in
+            touch with any questions or concerns. We aim to reply within a day
+            during working hours. Our working hours are Monday to Friday,
+            9am-6pm CET. Look forward to hearing from you!
           </p>
           <div className="mt-16">
             <form>
