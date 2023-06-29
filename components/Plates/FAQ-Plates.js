@@ -20,7 +20,7 @@ export default function FAQPlates() {
                   <Disclosure.Panel className="px-2 pt-1 pb-2 text-sm text-text antialiased">
                     <h6>Dinnerware:</h6>
                     <ul className="list-disc text-text list-outside pl-6">
-                      <li className="text-xs">
+                      <li className="text-sm">
                         Vertical rims prevent spills & allow for stacking
                       </li>
                       <li>Semi-matte reactive glaze finish</li>

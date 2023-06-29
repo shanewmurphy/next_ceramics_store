@@ -39,7 +39,7 @@ export default function AboutDropdown() {
               </Menu.Item>
               <Menu.Item>
                 <button className="group flex w-full items-center mb-2 rounded-md px-2 py-2 text-text font-semibold text-base hover:bg-background  antialiased">
-                  <Link href="/Plates-Collection">Contact Us</Link>
+                  <Link href="/Contact-Us">Contact Us</Link>
                 </button>
               </Menu.Item>
             </div>
