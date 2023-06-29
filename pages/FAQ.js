@@ -4,7 +4,6 @@ import { Fragment } from "react";
 
 import { Disclosure } from "@headlessui/react";
 import { PlusIcon } from "@heroicons/react/20/solid";
-import { ChevronUpIcon } from "@heroicons/react/20/solid";
 
 const Shipping = [
   {
@@ -33,7 +32,43 @@ const Shipping = [
   },
 ];
 
+const Products = [
+  {
+    id: "01",
+    Question: "Will your plates fit in my dishwasher?",
+    Answer:
+      "Yes, our ceramics are 100% microwave, dishwasher, and oven safe up to 220 C/428 F. ",
+  },
+  {
+    id: "02",
+    Question: "Will your plates fit in my dishwasher?",
+    Answer:
+      "The height of the rim of our plates are 2cm (3/4in). They should fit in most dishwashers in the bottom rack. To be 100% certain, you should measure the width of the slots in your dishwasher.",
+  },
+  {
+    id: "03",
+    Question: "Do your ceramics scratch easily?",
+    Answer:
+      "No, our ceramics are designed to be durable and long-lasting. All matte ceramics are susceptible to temporary marks of metal residue left behind by cutlery after heavy use. This is due matte glazes being less smooth than glossy glazes, causing more friction on the surface. And also due to lower quality cutlery having not enough hardness to withstand the friction.",
+  },
+  {
+    id: "04",
+    Question: "Do your ceramics contain any lead or heavy metals?",
+    Answer:
+      "No. Our Ceramics are 100% free of lead and other harmful metals and chemicals.",
+  },
+];
+
+const Returns = [
+  {
+    id: "01",
+    Question: "What is your return policy? How do I return my products?",
+    Answer:
+      "We will happily accept returns within 30 days of receiving your product subject to our terms and conditions. Reach out via our contact form to submit a request.",
+  },
+];
 import Layout from "@/components/Layout/Layout";
+
 export default function FAQPage() {
   return (
     <Layout>
@@ -103,6 +138,37 @@ export default function FAQPage() {
               </Tab.List>
               <Tab.Panels>
                 <Tab.Panel className="mt-8">
+                  {Products.map((product) => (
+                    <div
+                      className="lg:w-4/6 md:w-full sm:w-full"
+                      key={Products.id}
+                    >
+                      <Disclosure>
+                        {({ open }) => (
+                          <>
+                            <Disclosure.Button className="flex w-full justify-between lg:px-2 lg:py-2 sm:pb-2 sm:pt-2 text-left text-text text-xl font-medium focus:outline-none ">
+                              <span className="font-semibold lg:text-base sm:text-xs antialiased">
+                                {product.Question}
+                              </span>
+                              <PlusIcon
+                                className={`${
+                                  open ? "rotate-45 transform" : ""
+                                } h-6 w-6 text-text`}
+                              />
+                            </Disclosure.Button>
+                            <Disclosure.Panel className="lg:px-4 lg:py-2 sm:px-0 sm:pb-4 text-base text-text">
+                              <p className="lg:text-sm sm:text-xs font-medium antialiased">
+                                {product.Answer}
+                              </p>
+                            </Disclosure.Panel>
+                          </>
+                        )}
+                      </Disclosure>
+                      <div className="border-b-2 border-slate-500/20 w-full"></div>
+                    </div>
+                  ))}
+                </Tab.Panel>
+                <Tab.Panel className="mt-8">
                   {Shipping.map((shipping) => (
                     <div
                       className="lg:w-4/6 md:w-full sm:w-full"
@@ -112,7 +178,7 @@ export default function FAQPage() {
                         {({ open }) => (
                           <>
                             <Disclosure.Button className="flex w-full justify-between lg:px-2 lg:py-2 sm:pb-2 sm:pt-2 text-left text-text text-xl font-medium focus:outline-none ">
-                              <span className="font-semibold lg:text-xl sm:text-xs antialiased">
+                              <span className="font-semibold lg:text-base sm:text-xs antialiased">
                                 {shipping.Question}
                               </span>
                               <PlusIcon
@@ -133,8 +199,37 @@ export default function FAQPage() {
                     </div>
                   ))}
                 </Tab.Panel>
-                <Tab.Panel>Content 2</Tab.Panel>
-                <Tab.Panel>Content 3</Tab.Panel>
+                <Tab.Panel className="mt-8">
+                  {Returns.map((returns) => (
+                    <div
+                      className="lg:w-4/6 md:w-full sm:w-full"
+                      key={Returns.id}
+                    >
+                      <Disclosure>
+                        {({ open }) => (
+                          <>
+                            <Disclosure.Button className="flex w-full justify-between lg:px-2 lg:py-2 sm:pb-2 sm:pt-2 text-left text-text text-xl font-medium focus:outline-none ">
+                              <span className="font-semibold lg:text-base sm:text-xs antialiased">
+                                {returns.Question}
+                              </span>
+                              <PlusIcon
+                                className={`${
+                                  open ? "rotate-45 transform" : ""
+                                } h-6 w-6 text-text`}
+                              />
+                            </Disclosure.Button>
+                            <Disclosure.Panel className="lg:px-4 lg:py-2 sm:px-0 sm:pb-4 text-base text-text">
+                              <p className="lg:text-sm sm:text-xs font-medium antialiased">
+                                {returns.Answer}
+                              </p>
+                            </Disclosure.Panel>
+                          </>
+                        )}
+                      </Disclosure>
+                      <div className="border-b-2 border-slate-500/20 w-full"></div>
+                    </div>
+                  ))}
+                </Tab.Panel>
               </Tab.Panels>
             </Tab.Group>
           </div>

@@ -19,24 +19,27 @@ export default function Footer() {
               <div className="basis-1/4">
                 <ul className="text-white font-noraml text-base antialiased">
                   <li className="font-medium text-xl">Shop</li>
-                  <li>
-                    <Link href="#" className="hover:text-text">
-                      Ceramics
-                    </Link>
-                  </li>
-                  <li>
-                    <Link href="#" className="hover:text-text">
+                  <li className="py-1">
+                    <Link
+                      href="/Dinnerware-Collection"
+                      className="hover:text-text"
+                    >
                       Dinnerware Sets
                     </Link>
                   </li>
-                  <li>
-                    <Link href="#" className="hover:text-text">
+                  <li className="py-1">
+                    <Link href="/Plates-Collection" className="hover:text-text">
                       Plates
                     </Link>
                   </li>
-                  <li>
-                    <Link href="#" className="hover:text-text">
+                  <li className="py-1">
+                    <Link href="/Bowels-Collection" className="hover:text-text">
                       Bowels
+                    </Link>
+                  </li>
+                  <li className="py-1">
+                    <Link href="/Cups-Collection" className="hover:text-text">
+                      Cups
                     </Link>
                   </li>
                 </ul>
@@ -44,16 +47,36 @@ export default function Footer() {
               <div className="basis-1/4">
                 <ul className="text-white font-noraml text-base antialiased">
                   <li className="font-medium text-xl">About</li>
-                  <li>Our Story</li>
-                  <li>Sustainability</li>
-                  <li>Contact Us</li>
+                  <li className="py-1">
+                    <Link href="/Our-Story" className="hover:text-text">
+                      Our Story
+                    </Link>
+                  </li>
+                  <li className="py-1">
+                    <Link href="/Sustainability" className="hover:text-text">
+                      Sustainability
+                    </Link>
+                  </li>
+                  <li className="py-1">
+                    <Link href="/Contact-Us" className="hover:text-text">
+                      Contact Us
+                    </Link>
+                  </li>
                 </ul>
               </div>
               <div className="basis-1/4">
                 <ul className="text-white font-noraml text-base antialiased">
                   <li className="font-medium text-xl">Help</li>
-                  <li>FAQ</li>
-                  <li>Terms</li>
+                  <li className="py-1">
+                    <Link href="/FAQ" className="hover:text-text">
+                      FAQ
+                    </Link>
+                  </li>
+                  <li className="py-1">
+                    <Link href="/FAQ" className="hover:text-text">
+                      Terms & Conditions
+                    </Link>
+                  </li>
                 </ul>
               </div>
             </div>
@@ -75,15 +98,7 @@ export default function Footer() {
                           <ul className="text-white font-noraml text-base antialiased">
                             <li className="mb-2">
                               <Link
-                                href="#"
-                                className="hover:text-text text-sm"
-                              >
-                                Ceramics
-                              </Link>
-                            </li>
-                            <li className="mb-2">
-                              <Link
-                                href="#"
+                                href="/Dinnerware-Collection"
                                 className="hover:text-text text-sm"
                               >
                                 Dinnerware
@@ -91,7 +106,7 @@ export default function Footer() {
                             </li>
                             <li className="mb-2">
                               <Link
-                                href="#"
+                                href="/Plates-Collection"
                                 className="hover:text-text text-sm"
                               >
                                 Plates
@@ -99,10 +114,18 @@ export default function Footer() {
                             </li>
                             <li className="mb-2">
                               <Link
-                                href="#"
+                                href="/Bowels-Collection"
                                 className="hover:text-text text-sm"
                               >
                                 Bowels
+                              </Link>
+                            </li>
+                            <li className="mb-2">
+                              <Link
+                                href="/Cups-Collection"
+                                className="hover:text-text text-sm"
+                              >
+                                Cups
                               </Link>
                             </li>
                           </ul>
@@ -126,7 +149,7 @@ export default function Footer() {
                           <ul className="text-white font-noraml text-base antialiased">
                             <li className="mb-2">
                               <Link
-                                href="/"
+                                href="/Our-Story"
                                 className="hover:text-text text-sm"
                               >
                                 Our Story
@@ -134,7 +157,7 @@ export default function Footer() {
                             </li>
                             <li className="mb-2">
                               <Link
-                                href="/"
+                                href="/Sustainability"
                                 className="hover:text-text text-sm"
                               >
                                 Sustainability
@@ -142,7 +165,7 @@ export default function Footer() {
                             </li>
                             <li>
                               <Link
-                                href="/"
+                                href="/Contact-Us"
                                 className="hover:text-text text-sm"
                               >
                                 Contact Us
@@ -169,7 +192,7 @@ export default function Footer() {
                           <ul className="text-white font-noraml text-base antialiased">
                             <li className="mb-2">
                               <Link
-                                href="/"
+                                href="/FAQ"
                                 className="hover:text-text text-sm"
                               >
                                 FAQ
