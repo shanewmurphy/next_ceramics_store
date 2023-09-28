@@ -60,7 +60,7 @@ const BestSellers_Data = [
 
 export default function BestSellers() {
   return (
-    <div className="w-11/12 mx-auto mt-20 mb-40 lg:block md:block sm:hidden">
+    <div className="w-11/12  mx-auto mt-20 mb-40 lg:block md:block sm:hidden">
       <div className="mt-8">
         <Swiper
           modules={[Scrollbar, A11y]}
@@ -91,7 +91,7 @@ export default function BestSellers() {
                     </div>
                   </Link>
                 </div>
-                <div>
+                <div className="">
                   <h4 className="text-center font-semibold text-gray lg:text-xl md:text-lg sm:text-base mt-2 antialiased">
                     {BestSellers.name}
                     <span className="lg:text-sm md:text-xs sm:text-sm font-medium pl-1 antialiased">

@@ -21,7 +21,7 @@
     "react": "18.2.0",
     "react-dom": "18.2.0",
     "stripe": "^12.9.0",
-    "swiper": "^9.3.2"
+    "swiper": "^9.3.1"
   },
   "devDependencies": {
     "@tailwindcss/forms": "^0.5.3",

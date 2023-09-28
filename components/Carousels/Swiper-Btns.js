@@ -8,7 +8,7 @@ export default function SwiperBtns() {
   return (
     <div>
       <div className="h-6">
-        <div className="absolute leftt-0 top-0 z-20">
+        <div className="absolute left-0 top-0 z-20">
           <h3 className="lg:text-3xl md:text-3xl sm:text-2xl font-bold text-gray antialiased">
             Our Best Sellers
           </h3>
