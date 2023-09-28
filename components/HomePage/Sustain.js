@@ -24,7 +24,7 @@ export default function Sustainability() {
             packaging and plant one or more trees for each item sold.
           </p>
           <p className="mt-3 lg:text-left md:text-center sm:text-center">
-            <Link href="#">
+            <Link href="Sustainability">
               <button>
                 <ul className="inline-flex">
                   <li>

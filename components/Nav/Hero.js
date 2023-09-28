@@ -1,7 +1,7 @@
 import Image from "next/image";
 export default function Hero() {
   return (
-    <div>
+    <div className="relative">
       <div className="relative">
         <Image
           className="hero_img"
@@ -11,6 +11,7 @@ export default function Hero() {
           effect="blur"
           alt="Hero image"
         />
+        <div className="absolute">JJJ</div>
       </div>
     </div>
   );

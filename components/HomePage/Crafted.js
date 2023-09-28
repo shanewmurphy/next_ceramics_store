@@ -25,7 +25,7 @@ export default function Crafted() {
             quality to last a lifetime.
           </p>
           <p className="mt-3 lg:text-left md:text-center sm:text-center">
-            <Link href="#">
+            <Link href="Our-Story">
               <button>
                 <ul className="inline-flex">
                   <li>
