@@ -77,10 +77,7 @@ export default function BestSellers() {
               <SwiperSlide className="mt-16" key={BestSellers.id}>
                 <div>
                   <Link href={BestSellers.link} className="Link_container">
-                    <button className="btn lg:text-2xl font-semibold antialiased">
-                      View
-                    </button>
-                    <div className="relative">
+                    <div className="relative group">
                       <Image
                         src={BestSellers.image}
                         width={600}
@@ -88,6 +85,9 @@ export default function BestSellers() {
                         effect="blur"
                         alt="product"
                       />
+                      <button className="absolute z-10 inset-1/2 transform -translate-x-1/2 -translate-y-1/2 bg-button text-white px-4 py-2 rounded hover:bg-button transition duration-300 ease-in-out opacity-0 group-hover:opacity-100">
+                        View
+                      </button>
                     </div>
                   </Link>
                 </div>
