@@ -85,7 +85,7 @@ export default function FAQPage() {
             you within 24 hours.
           </p>
           <p className="mt-8">
-            <Link href="/">
+            <Link href="/Contact-Us">
               <button className="py-3 px-14 bg-white text-xl text-text font-semibold antialiased">
                 Contact Us
               </button>

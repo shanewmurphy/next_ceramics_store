@@ -12,7 +12,7 @@ export default function ContactUs() {
             We&apos;re here if you need us! We love to talk shop. Please get in
             touch with any questions or concerns. We aim to reply within a day
             during working hours. Our working hours are Monday to Friday,
-            9am-6pm CET. Look forward to hearing from you!
+            9am-6pm. Look forward to hearing from you!
           </p>
           <div className="mt-16">
             <form>
@@ -21,7 +21,7 @@ export default function ContactUs() {
                   <span class="block text-text mb-1">Full Name</span>
                   <input
                     type="text"
-                    class="lg:w-2/5 sm:w-11/12 block rounded-md bg-slate-50 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    class="lg:w-2/5 sm:w-11/12 block rounded-md bg-white border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                     placeholder="Full Name"
                   ></input>
                 </label>
@@ -29,7 +29,7 @@ export default function ContactUs() {
                   <span class="block text-text mt-4 mb-1">Your Email</span>
                   <input
                     type="email"
-                    class="lg:w-2/5 sm:w-11/12 block rounded-md bg-slate-50 border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
+                    class="lg:w-2/5 sm:w-11/12 block rounded-md bg-white border-transparent focus:border-gray-500 focus:bg-white focus:ring-0"
                     placeholder="john@example.com"
                   ></input>
                 </label>
